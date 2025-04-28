@@ -3,9 +3,19 @@ from pydantic import BaseModel
 import json
 from typing import List, Optional, Dict, Any
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="SAT Questions API", 
              description="API to retrieve SAT Math and Reading/Writing questions")
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load the data
 DATA_DIR = "data"
