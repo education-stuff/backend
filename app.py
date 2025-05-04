@@ -53,6 +53,7 @@ class QuestionBasic(BaseModel):
     primary_class_cd_desc: str
     program: str
     question: str
+    explanation: str
     answerOptions: List[Dict[str, str]]
     questionDetail: Optional[str] = None
     correct_answer: List[str]
@@ -63,9 +64,7 @@ class PaginatedResponse(BaseModel):
     limit: int
     questions: List[QuestionBasic]
 
-def extract_question_data(
-    question: Dict[str, Any], include_explanation: bool = True
-) -> Dict[str, Any]:
+def extract_question_data(question: Dict[str, Any]) -> Dict[str, Any]:
     result = {
         "questionId": question.get("questionId", ""),
         "difficulty": question.get("difficulty", ""),
@@ -78,8 +77,7 @@ def extract_question_data(
         result["questionDetail"] = question.get("questionDetail", "")
     result["answerOptions"] = question.get("options", [])
     result["correct_answer"] = question.get("correct_answer", [])
-    if include_explanation:
-        result["explanation"] = question.get("explanation", "")
+    result["explanation"] = question.get("explanation", "")
     return result
 
 @app.get("/")
