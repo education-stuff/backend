@@ -2,6 +2,8 @@
 
 A FastAPI application that serves SAT Math and Reading/Writing questions.
 
+https://1600-questions-api-aza2bggzf9avesee.eastus-01.azurewebsites.net/
+
 ## Setup
 
 1. Install dependencies:
