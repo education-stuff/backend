@@ -32,6 +32,19 @@ try:
 except FileNotFoundError:
     rw_questions = []
 
+# Load PSAT89 data
+try:
+    with open(os.path.join(DATA_DIR, "PSAT89_math.json"), "r") as f:
+        psat89_math_questions = json.load(f)
+except FileNotFoundError:
+    psat89_math_questions = []
+
+try:
+    with open(os.path.join(DATA_DIR, "PSAT89_RW.json"), "r") as f:
+        psat89_rw_questions = json.load(f)
+except FileNotFoundError:
+    psat89_rw_questions = []
+
 class QuestionBasic(BaseModel):
     questionId: str
     difficulty: str
@@ -63,25 +76,30 @@ def extract_question_data(question: Dict[str, Any], include_rationale: bool = Fa
         "program": question.get("program", ""),
     }
     
-    details = question.get("details", {})
+    # Question text
+    result["question"] = question.get("question", "")
     
-    result["stem"] = details.get("stem", "")
+    # Question detail for RW questions (if present)
+    if "questionDetail" in question:
+        result["questionDetail"] = question.get("questionDetail", "")
     
-    result["answerOptions"] = details.get("answerOptions", [])
+    # Answer options
+    result["answerOptions"] = question.get("options", [])
     
-    result["type"] = details.get("type", "")
+    # Correct answer
+    result["correct_answer"] = question.get("correct_answer", [])
     
-    result["correct_answer"] = details.get("correct_answer", [])
-    
+    # Explanation/rationale
     if include_rationale:
-        result["rationale"] = details.get("rationale", "")
+        result["rationale"] = question.get("explanation", "")
     
     return result
 
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the SAT Questions API",
-            "endpoints": ["/questions/math", "/questions/rw", "/questions/math/{question_id}", "/questions/rw/{question_id}"]}
+            "endpoints": ["/questions/math", "/questions/rw", "/questions/math/{question_id}", "/questions/rw/{question_id}",
+                         "/questions/psat89/math", "/questions/psat89/rw", "/questions/psat89/math/{question_id}", "/questions/psat89/rw/{question_id}"]}
 
 @app.get("/questions/math", response_model=PaginatedResponse)
 def get_math_questions(
@@ -161,6 +179,86 @@ def get_rw_questions(
 @app.get("/questions/rw/{question_id}")
 def get_rw_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
     for question in rw_questions:
+        if question.get("questionId") == question_id:
+            return extract_question_data(question, include_rationale)
+    raise HTTPException(status_code=404, detail="Question not found")
+
+@app.get("/questions/psat89/math", response_model=PaginatedResponse)
+def get_psat89_math_questions(
+    limit: int = Query(10, description="Number of questions to return"),
+    offset: int = Query(0, description="Starting position"),
+    page: int = Query(1, description="Page number"),
+    difficulty: Optional[str] = Query(None, description="Filter by difficulty (E, M, H)"),
+    skill: Optional[str] = Query(None, description="Filter by skill description"),
+    primary_class: Optional[str] = Query(None, description="Filter by primary class description")
+):
+    calculated_offset = (page - 1) * limit
+    if offset > 0:
+        calculated_offset = offset
+    
+    # Apply filters
+    filtered = psat89_math_questions
+    if difficulty:
+        filtered = [q for q in filtered if q.get("difficulty") == difficulty]
+    if skill:
+        filtered = [q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()]
+    if primary_class:
+        filtered = [q for q in filtered if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()]
+    
+    paginated = filtered[calculated_offset:calculated_offset + limit]
+    
+    result_questions = [extract_question_data(q) for q in paginated]
+    
+    return {
+        "total": len(filtered),
+        "page": page,
+        "limit": limit,
+        "questions": result_questions
+    }
+
+@app.get("/questions/psat89/math/{question_id}")
+def get_psat89_math_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
+    for question in psat89_math_questions:
+        if question.get("questionId") == question_id:
+            return extract_question_data(question, include_rationale)
+    raise HTTPException(status_code=404, detail="Question not found")
+
+@app.get("/questions/psat89/rw", response_model=PaginatedResponse)
+def get_psat89_rw_questions(
+    limit: int = Query(10, description="Number of questions to return"),
+    offset: int = Query(0, description="Starting position"),
+    page: int = Query(1, description="Page number"),
+    difficulty: Optional[str] = Query(None, description="Filter by difficulty (E, M, H)"),
+    skill: Optional[str] = Query(None, description="Filter by skill description"),
+    primary_class: Optional[str] = Query(None, description="Filter by primary class description")
+):
+    calculated_offset = (page - 1) * limit
+    if offset > 0:
+        calculated_offset = offset
+    
+    # Apply filters
+    filtered = psat89_rw_questions
+    if difficulty:
+        filtered = [q for q in filtered if q.get("difficulty") == difficulty]
+    if skill:
+        filtered = [q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()]
+    if primary_class:
+        filtered = [q for q in filtered if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()]
+    
+    paginated = filtered[calculated_offset:calculated_offset + limit]
+    
+    result_questions = [extract_question_data(q) for q in paginated]
+    
+    return {
+        "total": len(filtered),
+        "page": page,
+        "limit": limit,
+        "questions": result_questions
+    }
+
+@app.get("/questions/psat89/rw/{question_id}")
+def get_psat89_rw_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
+    for question in psat89_rw_questions:
         if question.get("questionId") == question_id:
             return extract_question_data(question, include_rationale)
     raise HTTPException(status_code=404, detail="Question not found")
