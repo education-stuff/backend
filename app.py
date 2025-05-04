@@ -11,7 +11,7 @@ app = FastAPI(title="SAT Questions API",
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"], #modify this to 1600.lol when the thing is deployed, so that other people cant request. only our domain can request
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
