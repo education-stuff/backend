@@ -5,13 +5,17 @@ from typing import List, Optional, Dict, Any
 import os
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="SAT Questions API", 
-             description="API to retrieve SAT Math and Reading/Writing questions")
+app = FastAPI(
+    title="SAT Questions API",
+    description="API to retrieve SAT Math and Reading/Writing questions",
+)
 
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], #modify this to 1600.lol when the thing is deployed, so that other people cant request. only our domain can request
+    allow_origins=[
+        "*"
+    ],  # modify this to 1600.lol when the thing is deployed, so that other people cant request. only our domain can request
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -45,28 +49,33 @@ try:
 except FileNotFoundError:
     psat89_rw_questions = []
 
+
 class QuestionBasic(BaseModel):
     questionId: str
     difficulty: str
     skill_desc: str
     primary_class_cd_desc: str
     program: str
-    
-    stem: str
+    question: str
     answerOptions: List[Dict[str, str]]
-    type: str
+    questionDetail: Optional[str] = None
     correct_answer: List[str]
+
 
 class QuestionDetails(QuestionBasic):
     rationale: str
-    
+
+
 class PaginatedResponse(BaseModel):
     total: int
     page: int
     limit: int
     questions: List[QuestionBasic]
 
-def extract_question_data(question: Dict[str, Any], include_rationale: bool = False) -> Dict[str, Any]:
+
+def extract_question_data(
+    question: Dict[str, Any], include_rationale: bool = False
+) -> Dict[str, Any]:
     # Basic question data
     result = {
         "questionId": question.get("questionId", ""),
@@ -75,194 +84,267 @@ def extract_question_data(question: Dict[str, Any], include_rationale: bool = Fa
         "primary_class_cd_desc": question.get("primary_class_cd_desc", ""),
         "program": question.get("program", ""),
     }
-    
+
     # Question text
     result["question"] = question.get("question", "")
-    
+
     # Question detail for RW questions (if present)
     if "questionDetail" in question:
         result["questionDetail"] = question.get("questionDetail", "")
-    
+
     # Answer options
     result["answerOptions"] = question.get("options", [])
-    
+
     # Correct answer
     result["correct_answer"] = question.get("correct_answer", [])
-    
+
     # Explanation/rationale
     if include_rationale:
         result["rationale"] = question.get("explanation", "")
-    
+
     return result
+
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the SAT Questions API",
-            "endpoints": ["/questions/math", "/questions/rw", "/questions/math/{question_id}", "/questions/rw/{question_id}",
-                         "/questions/psat89/math", "/questions/psat89/rw", "/questions/psat89/math/{question_id}", "/questions/psat89/rw/{question_id}"]}
+    return {
+        "message": "Welcome to the SAT Questions API",
+        "endpoints": [
+            "/questions/math",
+            "/questions/rw",
+            "/questions/math/{question_id}",
+            "/questions/rw/{question_id}",
+            "/questions/psat89/math",
+            "/questions/psat89/rw",
+            "/questions/psat89/math/{question_id}",
+            "/questions/psat89/rw/{question_id}",
+        ],
+    }
+
 
 @app.get("/questions/math", response_model=PaginatedResponse)
 def get_math_questions(
     limit: int = Query(10, description="Number of questions to return"),
     offset: int = Query(0, description="Starting position"),
     page: int = Query(1, description="Page number"),
-    difficulty: Optional[str] = Query(None, description="Filter by difficulty (E, M, H)"),
+    difficulty: Optional[str] = Query(
+        None, description="Filter by difficulty (E, M, H)"
+    ),
     skill: Optional[str] = Query(None, description="Filter by skill description"),
-    primary_class: Optional[str] = Query(None, description="Filter by primary class description")
+    primary_class: Optional[str] = Query(
+        None, description="Filter by primary class description"
+    ),
 ):
     calculated_offset = (page - 1) * limit
     if offset > 0:
         calculated_offset = offset
-    
+
     # Apply filters
     filtered = math_questions
     if difficulty:
         filtered = [q for q in filtered if q.get("difficulty") == difficulty]
     if skill:
-        filtered = [q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()]
+        filtered = [
+            q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()
+        ]
     if primary_class:
-        filtered = [q for q in filtered if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()]
-    
-    paginated = filtered[calculated_offset:calculated_offset + limit]
-    
+        filtered = [
+            q
+            for q in filtered
+            if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()
+        ]
+
+    paginated = filtered[calculated_offset : calculated_offset + limit]
+
     result_questions = [extract_question_data(q) for q in paginated]
-    
+
     return {
         "total": len(filtered),
         "page": page,
         "limit": limit,
-        "questions": result_questions
+        "questions": result_questions,
     }
 
+
 @app.get("/questions/math/{question_id}")
-def get_math_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
+def get_math_question(
+    question_id: str,
+    include_rationale: bool = Query(True, description="Include rationale in response"),
+):
     for question in math_questions:
         if question.get("questionId") == question_id:
             return extract_question_data(question, include_rationale)
     raise HTTPException(status_code=404, detail="Question not found")
+
 
 @app.get("/questions/rw", response_model=PaginatedResponse)
 def get_rw_questions(
     limit: int = Query(10, description="Number of questions to return"),
     offset: int = Query(0, description="Starting position"),
     page: int = Query(1, description="Page number"),
-    difficulty: Optional[str] = Query(None, description="Filter by difficulty (E, M, H)"),
+    difficulty: Optional[str] = Query(
+        None, description="Filter by difficulty (E, M, H)"
+    ),
     skill: Optional[str] = Query(None, description="Filter by skill description"),
-    primary_class: Optional[str] = Query(None, description="Filter by primary class description")
+    primary_class: Optional[str] = Query(
+        None, description="Filter by primary class description"
+    ),
 ):
     # Calculate the correct offset based on page and limit
     calculated_offset = (page - 1) * limit
     if offset > 0:
         calculated_offset = offset
-    
+
     # Apply filters
     filtered = rw_questions
     if difficulty:
         filtered = [q for q in filtered if q.get("difficulty") == difficulty]
     if skill:
-        filtered = [q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()]
+        filtered = [
+            q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()
+        ]
     if primary_class:
-        filtered = [q for q in filtered if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()]
-    
+        filtered = [
+            q
+            for q in filtered
+            if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()
+        ]
+
     # Paginate
-    paginated = filtered[calculated_offset:calculated_offset + limit]
-    
+    paginated = filtered[calculated_offset : calculated_offset + limit]
+
     result_questions = [extract_question_data(q) for q in paginated]
-    
+
     return {
         "total": len(filtered),
         "page": page,
         "limit": limit,
-        "questions": result_questions
+        "questions": result_questions,
     }
 
+
 @app.get("/questions/rw/{question_id}")
-def get_rw_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
+def get_rw_question(
+    question_id: str,
+    include_rationale: bool = Query(True, description="Include rationale in response"),
+):
     for question in rw_questions:
         if question.get("questionId") == question_id:
             return extract_question_data(question, include_rationale)
     raise HTTPException(status_code=404, detail="Question not found")
+
 
 @app.get("/questions/psat89/math", response_model=PaginatedResponse)
 def get_psat89_math_questions(
     limit: int = Query(10, description="Number of questions to return"),
     offset: int = Query(0, description="Starting position"),
     page: int = Query(1, description="Page number"),
-    difficulty: Optional[str] = Query(None, description="Filter by difficulty (E, M, H)"),
+    difficulty: Optional[str] = Query(
+        None, description="Filter by difficulty (E, M, H)"
+    ),
     skill: Optional[str] = Query(None, description="Filter by skill description"),
-    primary_class: Optional[str] = Query(None, description="Filter by primary class description")
+    primary_class: Optional[str] = Query(
+        None, description="Filter by primary class description"
+    ),
 ):
     calculated_offset = (page - 1) * limit
     if offset > 0:
         calculated_offset = offset
-    
+
     # Apply filters
     filtered = psat89_math_questions
     if difficulty:
         filtered = [q for q in filtered if q.get("difficulty") == difficulty]
     if skill:
-        filtered = [q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()]
+        filtered = [
+            q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()
+        ]
     if primary_class:
-        filtered = [q for q in filtered if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()]
-    
-    paginated = filtered[calculated_offset:calculated_offset + limit]
-    
+        filtered = [
+            q
+            for q in filtered
+            if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()
+        ]
+
+    paginated = filtered[calculated_offset : calculated_offset + limit]
+
     result_questions = [extract_question_data(q) for q in paginated]
-    
+
     return {
         "total": len(filtered),
         "page": page,
         "limit": limit,
-        "questions": result_questions
+        "questions": result_questions,
     }
 
+
 @app.get("/questions/psat89/math/{question_id}")
-def get_psat89_math_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
+def get_psat89_math_question(
+    question_id: str,
+    include_rationale: bool = Query(True, description="Include rationale in response"),
+):
     for question in psat89_math_questions:
         if question.get("questionId") == question_id:
             return extract_question_data(question, include_rationale)
     raise HTTPException(status_code=404, detail="Question not found")
+
 
 @app.get("/questions/psat89/rw", response_model=PaginatedResponse)
 def get_psat89_rw_questions(
     limit: int = Query(10, description="Number of questions to return"),
     offset: int = Query(0, description="Starting position"),
     page: int = Query(1, description="Page number"),
-    difficulty: Optional[str] = Query(None, description="Filter by difficulty (E, M, H)"),
+    difficulty: Optional[str] = Query(
+        None, description="Filter by difficulty (E, M, H)"
+    ),
     skill: Optional[str] = Query(None, description="Filter by skill description"),
-    primary_class: Optional[str] = Query(None, description="Filter by primary class description")
+    primary_class: Optional[str] = Query(
+        None, description="Filter by primary class description"
+    ),
 ):
     calculated_offset = (page - 1) * limit
     if offset > 0:
         calculated_offset = offset
-    
+
     # Apply filters
     filtered = psat89_rw_questions
     if difficulty:
         filtered = [q for q in filtered if q.get("difficulty") == difficulty]
     if skill:
-        filtered = [q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()]
+        filtered = [
+            q for q in filtered if skill.lower() in q.get("skill_desc", "").lower()
+        ]
     if primary_class:
-        filtered = [q for q in filtered if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()]
-    
-    paginated = filtered[calculated_offset:calculated_offset + limit]
-    
+        filtered = [
+            q
+            for q in filtered
+            if primary_class.lower() in q.get("primary_class_cd_desc", "").lower()
+        ]
+
+    paginated = filtered[calculated_offset : calculated_offset + limit]
+
     result_questions = [extract_question_data(q) for q in paginated]
-    
+
     return {
         "total": len(filtered),
         "page": page,
         "limit": limit,
-        "questions": result_questions
+        "questions": result_questions,
     }
 
+
 @app.get("/questions/psat89/rw/{question_id}")
-def get_psat89_rw_question(question_id: str, include_rationale: bool = Query(True, description="Include rationale in response")):
+def get_psat89_rw_question(
+    question_id: str,
+    include_rationale: bool = Query(True, description="Include rationale in response"),
+):
     for question in psat89_rw_questions:
         if question.get("questionId") == question_id:
             return extract_question_data(question, include_rationale)
     raise HTTPException(status_code=404, detail="Question not found")
 
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000) 
+
+    uvicorn.run(app, host="0.0.0.0", port=8000)
