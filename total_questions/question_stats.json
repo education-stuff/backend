@@ -1,0 +1,310 @@
+{
+  "total_questions": 5473,
+  "by_program": {
+    "PSAT10NMSQT": {
+      "total": 4,
+      "subjects": {
+        "math": {
+          "total": 2,
+          "categories": {
+            "Algebra": 1,
+            "Advanced Math": 1
+          },
+          "subcategories": {
+            "Linear functions": 1,
+            "Nonlinear functions": 1
+          }
+        },
+        "RW": {
+          "total": 2,
+          "categories": {
+            "Craft and Structure": 1,
+            "Information and Ideas": 1
+          },
+          "subcategories": {
+            "Words in Context": 1,
+            "Command of Evidence": 1
+          }
+        }
+      }
+    },
+    "PSAT89": {
+      "total": 2471,
+      "subjects": {
+        "math": {
+          "total": 1246,
+          "categories": {
+            "Algebra": 489,
+            "Advanced Math": 315,
+            "Problem-Solving and Data Analysis": 317,
+            "Geometry and Trigonometry": 125
+          },
+          "subcategories": {
+            "Linear functions": 140,
+            "Linear equations in two variables": 113,
+            "Systems of two linear equations in two variables": 92,
+            "Linear equations in one variable": 84,
+            "Linear inequalities in one or two variables": 60,
+            "Nonlinear functions": 123,
+            "Nonlinear equations in one variable and systems of equations in two variables ": 114,
+            "Equivalent expressions": 78,
+            "One-variable data: Distributions and measures of center and spread": 66,
+            "Two-variable data: Models and scatterplots": 51,
+            "Ratios, rates, proportional relationships, and units": 83,
+            "Percentages": 74,
+            "Probability and conditional probability": 43,
+            "Area and volume": 67,
+            "Lines, angles, and triangles": 37,
+            "Right triangles and trigonometry": 21
+          }
+        },
+        "RW": {
+          "total": 1225,
+          "categories": {
+            "Information and Ideas": 356,
+            "Craft and Structure": 310,
+            "Expression of Ideas": 268,
+            "Standard English Conventions": 291
+          },
+          "subcategories": {
+            "Inferences": 83,
+            "Command of Evidence": 184,
+            "Central Ideas and Details": 89,
+            "Words in Context": 176,
+            "Text Structure and Purpose": 96,
+            "Cross-Text Connections": 36,
+            "Cross-text Connections": 2,
+            "Transitions": 129,
+            "Rhetorical Synthesis": 139,
+            "Form, Structure, and Sense": 145,
+            "Boundaries": 146
+          }
+        }
+      }
+    },
+    "SAT": {
+      "total": 2998,
+      "subjects": {
+        "math": {
+          "total": 1555,
+          "categories": {
+            "Algebra": 519,
+            "Advanced Math": 447,
+            "Problem-Solving and Data Analysis": 368,
+            "Geometry and Trigonometry": 221
+          },
+          "subcategories": {
+            "Systems of two linear equations in two variables": 105,
+            "Linear functions": 140,
+            "Linear equations in two variables": 113,
+            "Linear inequalities in one or two variables": 65,
+            "Linear equations in one variable": 96,
+            "Nonlinear functions": 211,
+            "Nonlinear equations in one variable and systems of equations in two variables ": 138,
+            "Equivalent expressions": 98,
+            "Inference from sample statistics and margin of error ": 24,
+            "Ratios, rates, proportional relationships, and units": 83,
+            "Probability and conditional probability": 43,
+            "Percentages": 74,
+            "One-variable data: Distributions and measures of center and spread": 71,
+            "Two-variable data: Models and scatterplots": 63,
+            "Evaluating statistical claims: Observational studies and experiments ": 10,
+            "Lines, angles, and triangles": 71,
+            "Area and volume": 67,
+            "Right triangles and trigonometry": 44,
+            "Circles": 39
+          }
+        },
+        "RW": {
+          "total": 1443,
+          "categories": {
+            "Information and Ideas": 432,
+            "Craft and Structure": 375,
+            "Expression of Ideas": 309,
+            "Standard English Conventions": 327
+          },
+          "subcategories": {
+            "Inferences": 106,
+            "Central Ideas and Details": 106,
+            "Command of Evidence": 220,
+            "Words in Context": 205,
+            "Text Structure and Purpose": 117,
+            "Cross-Text Connections": 51,
+            "Cross-text Connections": 2,
+            "Transitions": 148,
+            "Rhetorical Synthesis": 161,
+            "Boundaries": 167,
+            "Form, Structure, and Sense": 160
+          }
+        }
+      }
+    }
+  },
+  "by_main_category": {
+    "Algebra": 1009,
+    "Advanced Math": 763,
+    "Craft and Structure": 686,
+    "Information and Ideas": 789,
+    "Problem-Solving and Data Analysis": 685,
+    "Geometry and Trigonometry": 346,
+    "Expression of Ideas": 577,
+    "Standard English Conventions": 618
+  },
+  "by_subcategory": {
+    "Linear functions": 281,
+    "Nonlinear functions": 335,
+    "Words in Context": 382,
+    "Command of Evidence": 405,
+    "Linear equations in two variables": 226,
+    "Systems of two linear equations in two variables": 197,
+    "Linear equations in one variable": 180,
+    "Linear inequalities in one or two variables": 125,
+    "Nonlinear equations in one variable and systems of equations in two variables ": 252,
+    "Equivalent expressions": 176,
+    "One-variable data: Distributions and measures of center and spread": 137,
+    "Two-variable data: Models and scatterplots": 114,
+    "Ratios, rates, proportional relationships, and units": 166,
+    "Percentages": 148,
+    "Probability and conditional probability": 86,
+    "Area and volume": 134,
+    "Lines, angles, and triangles": 108,
+    "Right triangles and trigonometry": 65,
+    "Inferences": 189,
+    "Central Ideas and Details": 195,
+    "Text Structure and Purpose": 213,
+    "Cross-Text Connections": 87,
+    "Cross-text Connections": 4,
+    "Transitions": 277,
+    "Rhetorical Synthesis": 300,
+    "Form, Structure, and Sense": 305,
+    "Boundaries": 313,
+    "Inference from sample statistics and margin of error ": 24,
+    "Evaluating statistical claims: Observational studies and experiments ": 10,
+    "Circles": 39
+  },
+  "detailed": {
+    "PSAT10NMSQT": {
+      "math": {
+        "main_categories": {
+          "Algebra": 1,
+          "Advanced Math": 1
+        },
+        "subcategories": {
+          "Linear functions": 1,
+          "Nonlinear functions": 1
+        }
+      },
+      "RW": {
+        "main_categories": {
+          "Craft and Structure": 1,
+          "Information and Ideas": 1
+        },
+        "subcategories": {
+          "Words in Context": 1,
+          "Command of Evidence": 1
+        }
+      }
+    },
+    "PSAT89": {
+      "math": {
+        "main_categories": {
+          "Algebra": 489,
+          "Advanced Math": 315,
+          "Problem-Solving and Data Analysis": 317,
+          "Geometry and Trigonometry": 125
+        },
+        "subcategories": {
+          "Linear functions": 140,
+          "Linear equations in two variables": 113,
+          "Systems of two linear equations in two variables": 92,
+          "Linear equations in one variable": 84,
+          "Linear inequalities in one or two variables": 60,
+          "Nonlinear functions": 123,
+          "Nonlinear equations in one variable and systems of equations in two variables ": 114,
+          "Equivalent expressions": 78,
+          "One-variable data: Distributions and measures of center and spread": 66,
+          "Two-variable data: Models and scatterplots": 51,
+          "Ratios, rates, proportional relationships, and units": 83,
+          "Percentages": 74,
+          "Probability and conditional probability": 43,
+          "Area and volume": 67,
+          "Lines, angles, and triangles": 37,
+          "Right triangles and trigonometry": 21
+        }
+      },
+      "RW": {
+        "main_categories": {
+          "Information and Ideas": 356,
+          "Craft and Structure": 310,
+          "Expression of Ideas": 268,
+          "Standard English Conventions": 291
+        },
+        "subcategories": {
+          "Inferences": 83,
+          "Command of Evidence": 184,
+          "Central Ideas and Details": 89,
+          "Words in Context": 176,
+          "Text Structure and Purpose": 96,
+          "Cross-Text Connections": 36,
+          "Cross-text Connections": 2,
+          "Transitions": 129,
+          "Rhetorical Synthesis": 139,
+          "Form, Structure, and Sense": 145,
+          "Boundaries": 146
+        }
+      }
+    },
+    "SAT": {
+      "math": {
+        "main_categories": {
+          "Algebra": 519,
+          "Advanced Math": 447,
+          "Problem-Solving and Data Analysis": 368,
+          "Geometry and Trigonometry": 221
+        },
+        "subcategories": {
+          "Systems of two linear equations in two variables": 105,
+          "Linear functions": 140,
+          "Linear equations in two variables": 113,
+          "Linear inequalities in one or two variables": 65,
+          "Linear equations in one variable": 96,
+          "Nonlinear functions": 211,
+          "Nonlinear equations in one variable and systems of equations in two variables ": 138,
+          "Equivalent expressions": 98,
+          "Inference from sample statistics and margin of error ": 24,
+          "Ratios, rates, proportional relationships, and units": 83,
+          "Probability and conditional probability": 43,
+          "Percentages": 74,
+          "One-variable data: Distributions and measures of center and spread": 71,
+          "Two-variable data: Models and scatterplots": 63,
+          "Evaluating statistical claims: Observational studies and experiments ": 10,
+          "Lines, angles, and triangles": 71,
+          "Area and volume": 67,
+          "Right triangles and trigonometry": 44,
+          "Circles": 39
+        }
+      },
+      "RW": {
+        "main_categories": {
+          "Information and Ideas": 432,
+          "Craft and Structure": 375,
+          "Expression of Ideas": 309,
+          "Standard English Conventions": 327
+        },
+        "subcategories": {
+          "Inferences": 106,
+          "Central Ideas and Details": 106,
+          "Command of Evidence": 220,
+          "Words in Context": 205,
+          "Text Structure and Purpose": 117,
+          "Cross-Text Connections": 51,
+          "Cross-text Connections": 2,
+          "Transitions": 148,
+          "Rhetorical Synthesis": 161,
+          "Boundaries": 167,
+          "Form, Structure, and Sense": 160
+        }
+      }
+    }
+  }
+}

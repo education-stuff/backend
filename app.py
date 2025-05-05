@@ -21,6 +21,20 @@ app.add_middleware(
 
 # Load the data
 DATA_DIR = "data"
+STATS_DIR = "total_questions"
+
+# Stats model
+class StatsResponse(BaseModel):
+    total_questions: int
+    by_program: Dict[str, Any]
+    by_main_category: Dict[str, int]
+
+class DetailedStatsResponse(BaseModel):
+    total_questions: int
+    by_program: Dict[str, Any]
+    by_main_category: Dict[str, int]
+    by_subcategory: Dict[str, int]
+    detailed: Dict[str, Any]
 
 try:
     with open(os.path.join(DATA_DIR, "SAT_math.json"), "r") as f:
@@ -90,6 +104,8 @@ def read_root():
             "/questions/psat89/math",
             "/questions/psat89/rw",
             "/questions/by-category/{category}",
+            "/stats",
+            "/stats/detailed",
         ],
     }
 
@@ -285,6 +301,48 @@ def get_psat89_rw_questions(
         "limit": limit,
         "questions": result_questions,
     }
+
+@app.get("/stats", response_model=StatsResponse)
+def get_stats():
+    """
+    Get statistics about the number of questions in the system.
+    Returns total question count and breakdown by program, subject, and main category.
+    """
+    try:
+        with open(os.path.join(STATS_DIR, "simplified_stats.json"), "r") as f:
+            stats = json.load(f)
+        return stats
+    except FileNotFoundError:
+        # If stats file doesn't exist, generate it on the fly
+        from stats_generator import generate_stats_files
+        generate_stats_files()
+        
+        with open(os.path.join(STATS_DIR, "simplified_stats.json"), "r") as f:
+            stats = json.load(f)
+        return stats
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error retrieving statistics: {str(e)}")
+
+@app.get("/stats/detailed", response_model=DetailedStatsResponse)
+def get_detailed_stats():
+    """
+    Get detailed statistics about the number of questions in the system.
+    Returns total question count and complete breakdown by program, subject, main category, and subcategory.
+    """
+    try:
+        with open(os.path.join(STATS_DIR, "question_stats.json"), "r") as f:
+            stats = json.load(f)
+        return stats
+    except FileNotFoundError:
+        # If stats file doesn't exist, generate it on the fly
+        from stats_generator import generate_stats_files
+        generate_stats_files()
+        
+        with open(os.path.join(STATS_DIR, "question_stats.json"), "r") as f:
+            stats = json.load(f)
+        return stats
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error retrieving detailed statistics: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn

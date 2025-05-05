@@ -1,0 +1,34 @@
+[
+  {
+    "questionId": "PSAT10NMSQT-RW-001",
+    "difficulty": "M",
+    "skill_desc": "Words in Context",
+    "primary_class_cd_desc": "Craft and Structure",
+    "program": "PSAT10NMSQT",
+    "question": "Test RW question for PSAT10NMSQT",
+    "options": [
+      {"id": "A", "content": "Option A"},
+      {"id": "B", "content": "Option B"},
+      {"id": "C", "content": "Option C"},
+      {"id": "D", "content": "Option D"}
+    ],
+    "correct_answer": ["C"],
+    "explanation": "This is a test explanation for RW."
+  },
+  {
+    "questionId": "PSAT10NMSQT-RW-002",
+    "difficulty": "H",
+    "skill_desc": "Command of Evidence",
+    "primary_class_cd_desc": "Information and Ideas",
+    "program": "PSAT10NMSQT",
+    "question": "Another test RW question for PSAT10NMSQT",
+    "options": [
+      {"id": "A", "content": "Option A"},
+      {"id": "B", "content": "Option B"},
+      {"id": "C", "content": "Option C"},
+      {"id": "D", "content": "Option D"}
+    ],
+    "correct_answer": ["D"],
+    "explanation": "This is another test explanation for RW."
+  }
+] 

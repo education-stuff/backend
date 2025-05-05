@@ -1,0 +1,36 @@
+{
+  "total_questions": 5473,
+  "by_program": {
+    "PSAT10NMSQT": {
+      "total": 4,
+      "by_subject": {
+        "math": 2,
+        "RW": 2
+      }
+    },
+    "PSAT89": {
+      "total": 2471,
+      "by_subject": {
+        "math": 1246,
+        "RW": 1225
+      }
+    },
+    "SAT": {
+      "total": 2998,
+      "by_subject": {
+        "math": 1555,
+        "RW": 1443
+      }
+    }
+  },
+  "by_main_category": {
+    "Algebra": 1009,
+    "Advanced Math": 763,
+    "Craft and Structure": 686,
+    "Information and Ideas": 789,
+    "Problem-Solving and Data Analysis": 685,
+    "Geometry and Trigonometry": 346,
+    "Expression of Ideas": 577,
+    "Standard English Conventions": 618
+  }
+}
