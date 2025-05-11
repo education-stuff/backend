@@ -26,18 +26,23 @@ STATS_DIR = "total_questions"
 # Stats model
 class StatsResponse(BaseModel):
     total_questions: int
+    total_active: int
+    total_inactive: int
     by_program: Dict[str, Any]
-    by_main_category: Dict[str, int]
-    by_difficulty: Dict[str, Any]
-    by_score_band: Dict[str, Any]
+    by_main_category_overall: Dict[str, Any]
+    by_subcategory_overall: Dict[str, Any]
+    by_difficulty_overall: Dict[str, Any]
+    by_score_band_overall: Dict[str, Any]
 
 class DetailedStatsResponse(BaseModel):
     total_questions: int
+    total_active: int
+    total_inactive: int
     by_program: Dict[str, Any]
-    by_main_category: Dict[str, int]
-    by_subcategory: Dict[str, int]
-    by_difficulty: Dict[str, Any]
-    by_score_band: Dict[str, Any]
+    by_main_category_overall: Dict[str, Any]
+    by_subcategory_overall: Dict[str, Any]
+    by_difficulty_overall: Dict[str, Any]
+    by_score_band_overall: Dict[str, Any]
     detailed: Dict[str, Any]
 
 try:
