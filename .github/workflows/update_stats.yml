@@ -13,6 +13,9 @@ on:
         required: false
         default: 'Manual update'
 
+permissions:
+  contents: write
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
