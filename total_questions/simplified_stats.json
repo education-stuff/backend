@@ -3,455 +3,67 @@
     "total_active": 5053,
     "total_inactive": 2987,
     "by_program": {
-        "PSAT10NMSQT": {
-            "total": 2571,
-            "active": 1508,
-            "inactive": 1063,
+        "SAT": {
+            "total": 2998,
+            "active": 1877,
+            "inactive": 1121,
             "subjects": {
-                "MATH": {
-                    "total": 1301,
-                    "active": 683,
-                    "inactive": 618,
-                    "categories": {
-                        "Algebra": {
-                            "active": 259,
-                            "inactive": 200,
-                            "total": 459
-                        },
-                        "Advanced Math": {
-                            "active": 196,
-                            "inactive": 168,
-                            "total": 364
-                        },
-                        "Problem-Solving and Data Analysis": {
-                            "active": 147,
-                            "inactive": 181,
-                            "total": 328
-                        },
-                        "Geometry and Trigonometry": {
-                            "active": 81,
-                            "inactive": 69,
-                            "total": 150
-                        }
-                    },
-                    "subcategories": {
-                        "Linear equations in two variables": {
-                            "active": 59,
-                            "inactive": 42,
-                            "total": 101
-                        },
-                        "Linear equations in one variable": {
-                            "active": 43,
-                            "inactive": 40,
-                            "total": 83
-                        },
-                        "Systems of two linear equations in two variables": {
-                            "active": 51,
-                            "inactive": 39,
-                            "total": 90
-                        },
-                        "Linear functions": {
-                            "active": 74,
-                            "inactive": 51,
-                            "total": 125
-                        },
-                        "Linear inequalities in one or two variables": {
-                            "active": 32,
-                            "inactive": 28,
-                            "total": 60
-                        },
-                        "Nonlinear functions": {
-                            "active": 104,
-                            "inactive": 65,
-                            "total": 169
-                        },
-                        "Nonlinear equations in one variable and systems of equations in two variables ": {
-                            "active": 65,
-                            "inactive": 58,
-                            "total": 123
-                        },
-                        "Equivalent expressions": {
-                            "active": 27,
-                            "inactive": 45,
-                            "total": 72
-                        },
-                        "Two-variable data: Models and scatterplots": {
-                            "active": 26,
-                            "inactive": 32,
-                            "total": 58
-                        },
-                        "Inference from sample statistics and margin of error ": {
-                            "active": 6,
-                            "inactive": 15,
-                            "total": 21
-                        },
-                        "Ratios, rates, proportional relationships, and units": {
-                            "active": 40,
-                            "inactive": 35,
-                            "total": 75
-                        },
-                        "One-variable data: Distributions and measures of center and spread": {
-                            "active": 28,
-                            "inactive": 38,
-                            "total": 66
-                        },
-                        "Percentages": {
-                            "active": 35,
-                            "inactive": 32,
-                            "total": 67
-                        },
-                        "Probability and conditional probability": {
-                            "active": 12,
-                            "inactive": 29,
-                            "total": 41
-                        },
-                        "Lines, angles, and triangles": {
-                            "active": 30,
-                            "inactive": 32,
-                            "total": 62
-                        },
-                        "Area and volume": {
-                            "active": 36,
-                            "inactive": 24,
-                            "total": 60
-                        },
-                        "Right triangles and trigonometry": {
-                            "active": 15,
-                            "inactive": 13,
-                            "total": 28
-                        }
-                    },
-                    "by_difficulty": {
-                        "M": {
-                            "active": 210,
-                            "inactive": 159,
-                            "total": 369,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 82,
-                                    "inactive": 52,
-                                    "total": 134
-                                },
-                                "Advanced Math": {
-                                    "active": 68,
-                                    "inactive": 38,
-                                    "total": 106
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 38,
-                                    "inactive": 48,
-                                    "total": 86
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 22,
-                                    "inactive": 21,
-                                    "total": 43
-                                }
-                            }
-                        },
-                        "E": {
-                            "active": 212,
-                            "inactive": 163,
-                            "total": 375,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 95,
-                                    "inactive": 59,
-                                    "total": 154
-                                },
-                                "Advanced Math": {
-                                    "active": 38,
-                                    "inactive": 31,
-                                    "total": 69
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 60,
-                                    "inactive": 59,
-                                    "total": 119
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 19,
-                                    "inactive": 14,
-                                    "total": 33
-                                }
-                            }
-                        },
-                        "H": {
-                            "active": 261,
-                            "inactive": 296,
-                            "total": 557,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 82,
-                                    "inactive": 89,
-                                    "total": 171
-                                },
-                                "Advanced Math": {
-                                    "active": 90,
-                                    "inactive": 99,
-                                    "total": 189
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 49,
-                                    "inactive": 74,
-                                    "total": 123
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 40,
-                                    "inactive": 34,
-                                    "total": 74
-                                }
-                            }
-                        }
-                    },
-                    "by_score_band": {
-                        "3": {
-                            "active": 92,
-                            "inactive": 44,
-                            "total": 136,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 42,
-                                    "inactive": 15,
-                                    "total": 57
-                                },
-                                "Advanced Math": {
-                                    "active": 27,
-                                    "inactive": 9,
-                                    "total": 36
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 11,
-                                    "inactive": 13,
-                                    "total": 24
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 12,
-                                    "inactive": 7,
-                                    "total": 19
-                                }
-                            }
-                        },
-                        "2": {
-                            "active": 123,
-                            "inactive": 94,
-                            "total": 217,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 60,
-                                    "inactive": 30,
-                                    "total": 90
-                                },
-                                "Advanced Math": {
-                                    "active": 22,
-                                    "inactive": 21,
-                                    "total": 43
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 25,
-                                    "inactive": 34,
-                                    "total": 59
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 16,
-                                    "inactive": 9,
-                                    "total": 25
-                                }
-                            }
-                        },
-                        "4": {
-                            "active": 118,
-                            "inactive": 115,
-                            "total": 233,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 40,
-                                    "inactive": 37,
-                                    "total": 77
-                                },
-                                "Advanced Math": {
-                                    "active": 41,
-                                    "inactive": 29,
-                                    "total": 70
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 27,
-                                    "inactive": 35,
-                                    "total": 62
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 10,
-                                    "inactive": 14,
-                                    "total": 24
-                                }
-                            }
-                        },
-                        "1": {
-                            "active": 89,
-                            "inactive": 69,
-                            "total": 158,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 35,
-                                    "inactive": 29,
-                                    "total": 64
-                                },
-                                "Advanced Math": {
-                                    "active": 16,
-                                    "inactive": 10,
-                                    "total": 26
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 35,
-                                    "inactive": 25,
-                                    "total": 60
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 3,
-                                    "inactive": 5,
-                                    "total": 8
-                                }
-                            }
-                        },
-                        "7": {
-                            "active": 100,
-                            "inactive": 90,
-                            "total": 190,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 25,
-                                    "inactive": 27,
-                                    "total": 52
-                                },
-                                "Advanced Math": {
-                                    "active": 40,
-                                    "inactive": 28,
-                                    "total": 68
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 23,
-                                    "inactive": 22,
-                                    "total": 45
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 12,
-                                    "inactive": 13,
-                                    "total": 25
-                                }
-                            }
-                        },
-                        "5": {
-                            "active": 81,
-                            "inactive": 103,
-                            "total": 184,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 34,
-                                    "inactive": 28,
-                                    "total": 62
-                                },
-                                "Advanced Math": {
-                                    "active": 21,
-                                    "inactive": 40,
-                                    "total": 61
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 16,
-                                    "inactive": 27,
-                                    "total": 43
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 10,
-                                    "inactive": 8,
-                                    "total": 18
-                                }
-                            }
-                        },
-                        "6": {
-                            "active": 80,
-                            "inactive": 103,
-                            "total": 183,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 23,
-                                    "inactive": 34,
-                                    "total": 57
-                                },
-                                "Advanced Math": {
-                                    "active": 29,
-                                    "inactive": 31,
-                                    "total": 60
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 10,
-                                    "inactive": 25,
-                                    "total": 35
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 18,
-                                    "inactive": 13,
-                                    "total": 31
-                                }
-                            }
-                        }
-                    }
-                },
                 "RW": {
-                    "total": 1270,
-                    "active": 825,
+                    "total": 1443,
+                    "active": 998,
                     "inactive": 445,
                     "categories": {
                         "Information and Ideas": {
-                            "active": 225,
+                            "active": 274,
                             "inactive": 158,
-                            "total": 383
+                            "total": 432
                         },
                         "Craft and Structure": {
-                            "active": 213,
+                            "active": 259,
                             "inactive": 116,
-                            "total": 329
+                            "total": 375
                         },
                         "Expression of Ideas": {
-                            "active": 188,
+                            "active": 228,
                             "inactive": 81,
-                            "total": 269
+                            "total": 309
                         },
                         "Standard English Conventions": {
-                            "active": 199,
+                            "active": 237,
                             "inactive": 90,
-                            "total": 289
+                            "total": 327
                         }
                     },
                     "subcategories": {
-                        "Command of Evidence": {
-                            "active": 117,
-                            "inactive": 79,
-                            "total": 196
+                        "Inferences": {
+                            "active": 65,
+                            "inactive": 41,
+                            "total": 106
                         },
                         "Central Ideas and Details": {
-                            "active": 56,
+                            "active": 68,
                             "inactive": 38,
-                            "total": 94
+                            "total": 106
                         },
-                        "Inferences": {
-                            "active": 52,
-                            "inactive": 41,
-                            "total": 93
+                        "Command of Evidence": {
+                            "active": 141,
+                            "inactive": 79,
+                            "total": 220
                         },
                         "Words in Context": {
-                            "active": 133,
+                            "active": 158,
                             "inactive": 47,
-                            "total": 180
-                        },
-                        "Cross-Text Connections": {
-                            "active": 16,
-                            "inactive": 33,
-                            "total": 49
+                            "total": 205
                         },
                         "Text Structure and Purpose": {
-                            "active": 63,
+                            "active": 82,
                             "inactive": 35,
-                            "total": 98
+                            "total": 117
+                        },
+                        "Cross-Text Connections": {
+                            "active": 18,
+                            "inactive": 33,
+                            "total": 51
                         },
                         "Cross-text Connections": {
                             "active": 1,
@@ -459,296 +71,694 @@
                             "total": 2
                         },
                         "Transitions": {
-                            "active": 92,
+                            "active": 112,
                             "inactive": 36,
-                            "total": 128
-                        },
-                        "Rhetorical Synthesis": {
-                            "active": 96,
-                            "inactive": 45,
-                            "total": 141
-                        },
-                        "Boundaries": {
-                            "active": 100,
-                            "inactive": 48,
                             "total": 148
                         },
+                        "Rhetorical Synthesis": {
+                            "active": 116,
+                            "inactive": 45,
+                            "total": 161
+                        },
+                        "Boundaries": {
+                            "active": 119,
+                            "inactive": 48,
+                            "total": 167
+                        },
                         "Form, Structure, and Sense": {
-                            "active": 99,
+                            "active": 118,
                             "inactive": 42,
-                            "total": 141
+                            "total": 160
                         }
                     },
                     "by_difficulty": {
                         "H": {
-                            "active": 338,
-                            "inactive": 223,
-                            "total": 561,
+                            "active": 289,
+                            "inactive": 148,
+                            "total": 437,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 133,
-                                    "inactive": 83,
-                                    "total": 216
+                                    "active": 114,
+                                    "inactive": 58,
+                                    "total": 172
                                 },
                                 "Craft and Structure": {
-                                    "active": 74,
-                                    "inactive": 52,
-                                    "total": 126
+                                    "active": 59,
+                                    "inactive": 35,
+                                    "total": 94
                                 },
                                 "Expression of Ideas": {
-                                    "active": 58,
-                                    "inactive": 41,
-                                    "total": 99
+                                    "active": 39,
+                                    "inactive": 26,
+                                    "total": 65
                                 },
                                 "Standard English Conventions": {
-                                    "active": 73,
-                                    "inactive": 47,
-                                    "total": 120
-                                }
-                            }
-                        },
-                        "E": {
-                            "active": 139,
-                            "inactive": 89,
-                            "total": 228,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 11,
-                                    "inactive": 32,
-                                    "total": 43
-                                },
-                                "Craft and Structure": {
-                                    "active": 51,
-                                    "inactive": 25,
-                                    "total": 76
-                                },
-                                "Expression of Ideas": {
-                                    "active": 20,
-                                    "inactive": 16,
-                                    "total": 36
-                                },
-                                "Standard English Conventions": {
-                                    "active": 57,
-                                    "inactive": 16,
-                                    "total": 73
+                                    "active": 77,
+                                    "inactive": 29,
+                                    "total": 106
                                 }
                             }
                         },
                         "M": {
-                            "active": 348,
-                            "inactive": 133,
-                            "total": 481,
+                            "active": 344,
+                            "inactive": 147,
+                            "total": 491,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 81,
-                                    "inactive": 43,
-                                    "total": 124
+                                    "active": 102,
+                                    "inactive": 47,
+                                    "total": 149
                                 },
                                 "Craft and Structure": {
-                                    "active": 88,
-                                    "inactive": 39,
-                                    "total": 127
+                                    "active": 76,
+                                    "inactive": 38,
+                                    "total": 114
                                 },
                                 "Expression of Ideas": {
-                                    "active": 110,
-                                    "inactive": 24,
-                                    "total": 134
+                                    "active": 115,
+                                    "inactive": 28,
+                                    "total": 143
                                 },
                                 "Standard English Conventions": {
-                                    "active": 69,
+                                    "active": 51,
+                                    "inactive": 34,
+                                    "total": 85
+                                }
+                            }
+                        },
+                        "E": {
+                            "active": 365,
+                            "inactive": 150,
+                            "total": 515,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 58,
+                                    "inactive": 53,
+                                    "total": 111
+                                },
+                                "Craft and Structure": {
+                                    "active": 124,
+                                    "inactive": 43,
+                                    "total": 167
+                                },
+                                "Expression of Ideas": {
+                                    "active": 74,
                                     "inactive": 27,
-                                    "total": 96
+                                    "total": 101
+                                },
+                                "Standard English Conventions": {
+                                    "active": 109,
+                                    "inactive": 27,
+                                    "total": 136
                                 }
                             }
                         }
                     },
                     "by_score_band": {
                         "7": {
-                            "active": 95,
+                            "active": 139,
                             "inactive": 69,
-                            "total": 164,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 36,
-                                    "inactive": 26,
-                                    "total": 62
-                                },
-                                "Craft and Structure": {
-                                    "active": 18,
-                                    "inactive": 16,
-                                    "total": 34
-                                },
-                                "Expression of Ideas": {
-                                    "active": 7,
-                                    "inactive": 14,
-                                    "total": 21
-                                },
-                                "Standard English Conventions": {
-                                    "active": 34,
-                                    "inactive": 13,
-                                    "total": 47
-                                }
-                            }
-                        },
-                        "2": {
-                            "active": 113,
-                            "inactive": 44,
-                            "total": 157,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 11,
-                                    "inactive": 16,
-                                    "total": 27
-                                },
-                                "Craft and Structure": {
-                                    "active": 38,
-                                    "inactive": 12,
-                                    "total": 50
-                                },
-                                "Expression of Ideas": {
-                                    "active": 17,
-                                    "inactive": 8,
-                                    "total": 25
-                                },
-                                "Standard English Conventions": {
-                                    "active": 47,
-                                    "inactive": 8,
-                                    "total": 55
-                                }
-                            }
-                        },
-                        "5": {
-                            "active": 119,
-                            "inactive": 75,
-                            "total": 194,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 43,
-                                    "inactive": 25,
-                                    "total": 68
-                                },
-                                "Craft and Structure": {
-                                    "active": 27,
-                                    "inactive": 17,
-                                    "total": 44
-                                },
-                                "Expression of Ideas": {
-                                    "active": 30,
-                                    "inactive": 15,
-                                    "total": 45
-                                },
-                                "Standard English Conventions": {
-                                    "active": 19,
-                                    "inactive": 18,
-                                    "total": 37
-                                }
-                            }
-                        },
-                        "6": {
-                            "active": 124,
-                            "inactive": 79,
-                            "total": 203,
+                            "total": 208,
                             "categories": {
                                 "Information and Ideas": {
                                     "active": 54,
-                                    "inactive": 32,
-                                    "total": 86
+                                    "inactive": 26,
+                                    "total": 80
                                 },
                                 "Craft and Structure": {
-                                    "active": 29,
-                                    "inactive": 19,
-                                    "total": 48
+                                    "active": 25,
+                                    "inactive": 16,
+                                    "total": 41
                                 },
                                 "Expression of Ideas": {
-                                    "active": 21,
-                                    "inactive": 12,
-                                    "total": 33
-                                },
-                                "Standard English Conventions": {
-                                    "active": 20,
-                                    "inactive": 16,
-                                    "total": 36
-                                }
-                            }
-                        },
-                        "1": {
-                            "active": 26,
-                            "inactive": 45,
-                            "total": 71,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 0,
-                                    "inactive": 16,
-                                    "total": 16
-                                },
-                                "Craft and Structure": {
-                                    "active": 13,
-                                    "inactive": 13,
+                                    "active": 12,
+                                    "inactive": 14,
                                     "total": 26
                                 },
-                                "Expression of Ideas": {
-                                    "active": 3,
-                                    "inactive": 8,
-                                    "total": 11
-                                },
                                 "Standard English Conventions": {
-                                    "active": 10,
-                                    "inactive": 8,
-                                    "total": 18
+                                    "active": 48,
+                                    "inactive": 13,
+                                    "total": 61
                                 }
                             }
                         },
                         "4": {
-                            "active": 189,
+                            "active": 207,
                             "inactive": 72,
-                            "total": 261,
+                            "total": 279,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 53,
+                                    "active": 55,
                                     "inactive": 22,
-                                    "total": 75
+                                    "total": 77
                                 },
                                 "Craft and Structure": {
-                                    "active": 40,
+                                    "active": 46,
                                     "inactive": 21,
-                                    "total": 61
+                                    "total": 67
                                 },
                                 "Expression of Ideas": {
-                                    "active": 72,
+                                    "active": 80,
                                     "inactive": 13,
-                                    "total": 85
+                                    "total": 93
                                 },
                                 "Standard English Conventions": {
-                                    "active": 24,
+                                    "active": 26,
                                     "inactive": 16,
-                                    "total": 40
+                                    "total": 42
+                                }
+                            }
+                        },
+                        "5": {
+                            "active": 137,
+                            "inactive": 75,
+                            "total": 212,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 47,
+                                    "inactive": 25,
+                                    "total": 72
+                                },
+                                "Craft and Structure": {
+                                    "active": 30,
+                                    "inactive": 17,
+                                    "total": 47
+                                },
+                                "Expression of Ideas": {
+                                    "active": 35,
+                                    "inactive": 15,
+                                    "total": 50
+                                },
+                                "Standard English Conventions": {
+                                    "active": 25,
+                                    "inactive": 18,
+                                    "total": 43
                                 }
                             }
                         },
                         "3": {
-                            "active": 159,
+                            "active": 178,
                             "inactive": 61,
-                            "total": 220,
+                            "total": 239,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 28,
+                                    "active": 31,
                                     "inactive": 21,
-                                    "total": 49
+                                    "total": 52
+                                },
+                                "Craft and Structure": {
+                                    "active": 51,
+                                    "inactive": 18,
+                                    "total": 69
+                                },
+                                "Expression of Ideas": {
+                                    "active": 50,
+                                    "inactive": 11,
+                                    "total": 61
+                                },
+                                "Standard English Conventions": {
+                                    "active": 46,
+                                    "inactive": 11,
+                                    "total": 57
+                                }
+                            }
+                        },
+                        "2": {
+                            "active": 134,
+                            "inactive": 44,
+                            "total": 178,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 15,
+                                    "inactive": 16,
+                                    "total": 31
                                 },
                                 "Craft and Structure": {
                                     "active": 48,
-                                    "inactive": 18,
-                                    "total": 66
+                                    "inactive": 12,
+                                    "total": 60
                                 },
                                 "Expression of Ideas": {
-                                    "active": 38,
-                                    "inactive": 11,
-                                    "total": 49
+                                    "active": 20,
+                                    "inactive": 8,
+                                    "total": 28
                                 },
                                 "Standard English Conventions": {
+                                    "active": 51,
+                                    "inactive": 8,
+                                    "total": 59
+                                }
+                            }
+                        },
+                        "6": {
+                            "active": 150,
+                            "inactive": 79,
+                            "total": 229,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 60,
+                                    "inactive": 32,
+                                    "total": 92
+                                },
+                                "Craft and Structure": {
+                                    "active": 34,
+                                    "inactive": 19,
+                                    "total": 53
+                                },
+                                "Expression of Ideas": {
+                                    "active": 27,
+                                    "inactive": 12,
+                                    "total": 39
+                                },
+                                "Standard English Conventions": {
+                                    "active": 29,
+                                    "inactive": 16,
+                                    "total": 45
+                                }
+                            }
+                        },
+                        "1": {
+                            "active": 53,
+                            "inactive": 45,
+                            "total": 98,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 12,
+                                    "inactive": 16,
+                                    "total": 28
+                                },
+                                "Craft and Structure": {
+                                    "active": 25,
+                                    "inactive": 13,
+                                    "total": 38
+                                },
+                                "Expression of Ideas": {
+                                    "active": 4,
+                                    "inactive": 8,
+                                    "total": 12
+                                },
+                                "Standard English Conventions": {
+                                    "active": 12,
+                                    "inactive": 8,
+                                    "total": 20
+                                }
+                            }
+                        }
+                    }
+                },
+                "MATH": {
+                    "total": 1555,
+                    "active": 879,
+                    "inactive": 676,
+                    "categories": {
+                        "Algebra": {
+                            "active": 319,
+                            "inactive": 200,
+                            "total": 519
+                        },
+                        "Advanced Math": {
+                            "active": 257,
+                            "inactive": 190,
+                            "total": 447
+                        },
+                        "Problem-Solving and Data Analysis": {
+                            "active": 176,
+                            "inactive": 192,
+                            "total": 368
+                        },
+                        "Geometry and Trigonometry": {
+                            "active": 127,
+                            "inactive": 94,
+                            "total": 221
+                        }
+                    },
+                    "subcategories": {
+                        "Systems of two linear equations in two variables": {
+                            "active": 66,
+                            "inactive": 39,
+                            "total": 105
+                        },
+                        "Linear functions": {
+                            "active": 89,
+                            "inactive": 51,
+                            "total": 140
+                        },
+                        "Linear equations in two variables": {
+                            "active": 71,
+                            "inactive": 42,
+                            "total": 113
+                        },
+                        "Linear inequalities in one or two variables": {
+                            "active": 37,
+                            "inactive": 28,
+                            "total": 65
+                        },
+                        "Linear equations in one variable": {
+                            "active": 56,
+                            "inactive": 40,
+                            "total": 96
+                        },
+                        "Nonlinear functions": {
+                            "active": 140,
+                            "inactive": 71,
+                            "total": 211
+                        },
+                        "Nonlinear equations in one variable and systems of equations in two variables ": {
+                            "active": 79,
+                            "inactive": 59,
+                            "total": 138
+                        },
+                        "Equivalent expressions": {
+                            "active": 38,
+                            "inactive": 60,
+                            "total": 98
+                        },
+                        "Inference from sample statistics and margin of error ": {
+                            "active": 8,
+                            "inactive": 16,
+                            "total": 24
+                        },
+                        "Ratios, rates, proportional relationships, and units": {
+                            "active": 48,
+                            "inactive": 35,
+                            "total": 83
+                        },
+                        "Probability and conditional probability": {
+                            "active": 14,
+                            "inactive": 29,
+                            "total": 43
+                        },
+                        "Percentages": {
+                            "active": 42,
+                            "inactive": 32,
+                            "total": 74
+                        },
+                        "One-variable data: Distributions and measures of center and spread": {
+                            "active": 33,
+                            "inactive": 38,
+                            "total": 71
+                        },
+                        "Two-variable data: Models and scatterplots": {
+                            "active": 31,
+                            "inactive": 32,
+                            "total": 63
+                        },
+                        "Evaluating statistical claims: Observational studies and experiments ": {
+                            "active": 0,
+                            "inactive": 10,
+                            "total": 10
+                        },
+                        "Lines, angles, and triangles": {
+                            "active": 39,
+                            "inactive": 32,
+                            "total": 71
+                        },
+                        "Area and volume": {
+                            "active": 43,
+                            "inactive": 24,
+                            "total": 67
+                        },
+                        "Right triangles and trigonometry": {
+                            "active": 25,
+                            "inactive": 19,
+                            "total": 44
+                        },
+                        "Circles": {
+                            "active": 20,
+                            "inactive": 19,
+                            "total": 39
+                        }
+                    },
+                    "by_difficulty": {
+                        "H": {
+                            "active": 252,
+                            "inactive": 229,
+                            "total": 481,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 63,
+                                    "inactive": 61,
+                                    "total": 124
+                                },
+                                "Advanced Math": {
+                                    "active": 90,
+                                    "inactive": 71,
+                                    "total": 161
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 40,
+                                    "inactive": 53,
+                                    "total": 93
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 59,
+                                    "inactive": 44,
+                                    "total": 103
+                                }
+                            }
+                        },
+                        "E": {
+                            "active": 361,
+                            "inactive": 210,
+                            "total": 571,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 158,
+                                    "inactive": 74,
+                                    "total": 232
+                                },
+                                "Advanced Math": {
+                                    "active": 81,
+                                    "inactive": 40,
+                                    "total": 121
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 85,
+                                    "inactive": 74,
+                                    "total": 159
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 37,
+                                    "inactive": 22,
+                                    "total": 59
+                                }
+                            }
+                        },
+                        "M": {
+                            "active": 266,
+                            "inactive": 237,
+                            "total": 503,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 98,
+                                    "inactive": 65,
+                                    "total": 163
+                                },
+                                "Advanced Math": {
+                                    "active": 86,
+                                    "inactive": 79,
+                                    "total": 165
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 51,
+                                    "inactive": 65,
+                                    "total": 116
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 31,
+                                    "inactive": 28,
+                                    "total": 59
+                                }
+                            }
+                        }
+                    },
+                    "by_score_band": {
+                        "6": {
+                            "active": 109,
+                            "inactive": 126,
+                            "total": 235,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 30,
+                                    "inactive": 34,
+                                    "total": 64
+                                },
+                                "Advanced Math": {
+                                    "active": 36,
+                                    "inactive": 40,
+                                    "total": 76
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 13,
+                                    "inactive": 29,
+                                    "total": 42
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 30,
+                                    "inactive": 23,
+                                    "total": 53
+                                }
+                            }
+                        },
+                        "2": {
+                            "active": 146,
+                            "inactive": 96,
+                            "total": 242,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 66,
+                                    "inactive": 30,
+                                    "total": 96
+                                },
+                                "Advanced Math": {
+                                    "active": 27,
+                                    "inactive": 21,
+                                    "total": 48
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 33,
+                                    "inactive": 36,
+                                    "total": 69
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 20,
+                                    "inactive": 9,
+                                    "total": 29
+                                }
+                            }
+                        },
+                        "5": {
+                            "active": 102,
+                            "inactive": 114,
+                            "total": 216,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 41,
+                                    "inactive": 28,
+                                    "total": 69
+                                },
+                                "Advanced Math": {
+                                    "active": 30,
+                                    "inactive": 44,
+                                    "total": 74
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 18,
+                                    "inactive": 28,
+                                    "total": 46
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 13,
+                                    "inactive": 14,
+                                    "total": 27
+                                }
+                            }
+                        },
+                        "4": {
+                            "active": 164,
+                            "inactive": 123,
+                            "total": 287,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 57,
+                                    "inactive": 37,
+                                    "total": 94
+                                },
+                                "Advanced Math": {
+                                    "active": 56,
+                                    "inactive": 35,
+                                    "total": 91
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 33,
+                                    "inactive": 37,
+                                    "total": 70
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 18,
+                                    "inactive": 14,
+                                    "total": 32
+                                }
+                            }
+                        },
+                        "3": {
+                            "active": 106,
+                            "inactive": 45,
+                            "total": 151,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 47,
+                                    "inactive": 15,
+                                    "total": 62
+                                },
+                                "Advanced Math": {
+                                    "active": 35,
+                                    "inactive": 9,
+                                    "total": 44
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 11,
+                                    "inactive": 13,
+                                    "total": 24
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 13,
+                                    "inactive": 8,
+                                    "total": 21
+                                }
+                            }
+                        },
+                        "7": {
+                            "active": 143,
+                            "inactive": 103,
+                            "total": 246,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 33,
+                                    "inactive": 27,
+                                    "total": 60
+                                },
+                                "Advanced Math": {
+                                    "active": 54,
+                                    "inactive": 31,
+                                    "total": 85
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 27,
+                                    "inactive": 24,
+                                    "total": 51
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 29,
+                                    "inactive": 21,
+                                    "total": 50
+                                }
+                            }
+                        },
+                        "1": {
+                            "active": 109,
+                            "inactive": 69,
+                            "total": 178,
+                            "categories": {
+                                "Algebra": {
                                     "active": 45,
-                                    "inactive": 11,
-                                    "total": 56
+                                    "inactive": 29,
+                                    "total": 74
+                                },
+                                "Advanced Math": {
+                                    "active": 19,
+                                    "inactive": 10,
+                                    "total": 29
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 41,
+                                    "inactive": 25,
+                                    "total": 66
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 4,
+                                    "inactive": 5,
+                                    "total": 9
                                 }
                             }
                         }
@@ -1504,465 +1514,67 @@
                 }
             }
         },
-        "SAT": {
-            "total": 2998,
-            "active": 1877,
-            "inactive": 1121,
+        "PSAT10NMSQT": {
+            "total": 2571,
+            "active": 1508,
+            "inactive": 1063,
             "subjects": {
-                "MATH": {
-                    "total": 1555,
-                    "active": 879,
-                    "inactive": 676,
-                    "categories": {
-                        "Algebra": {
-                            "active": 319,
-                            "inactive": 200,
-                            "total": 519
-                        },
-                        "Advanced Math": {
-                            "active": 257,
-                            "inactive": 190,
-                            "total": 447
-                        },
-                        "Problem-Solving and Data Analysis": {
-                            "active": 176,
-                            "inactive": 192,
-                            "total": 368
-                        },
-                        "Geometry and Trigonometry": {
-                            "active": 127,
-                            "inactive": 94,
-                            "total": 221
-                        }
-                    },
-                    "subcategories": {
-                        "Systems of two linear equations in two variables": {
-                            "active": 66,
-                            "inactive": 39,
-                            "total": 105
-                        },
-                        "Linear functions": {
-                            "active": 89,
-                            "inactive": 51,
-                            "total": 140
-                        },
-                        "Linear equations in two variables": {
-                            "active": 71,
-                            "inactive": 42,
-                            "total": 113
-                        },
-                        "Linear inequalities in one or two variables": {
-                            "active": 37,
-                            "inactive": 28,
-                            "total": 65
-                        },
-                        "Linear equations in one variable": {
-                            "active": 56,
-                            "inactive": 40,
-                            "total": 96
-                        },
-                        "Nonlinear functions": {
-                            "active": 140,
-                            "inactive": 71,
-                            "total": 211
-                        },
-                        "Nonlinear equations in one variable and systems of equations in two variables ": {
-                            "active": 79,
-                            "inactive": 59,
-                            "total": 138
-                        },
-                        "Equivalent expressions": {
-                            "active": 38,
-                            "inactive": 60,
-                            "total": 98
-                        },
-                        "Inference from sample statistics and margin of error ": {
-                            "active": 8,
-                            "inactive": 16,
-                            "total": 24
-                        },
-                        "Ratios, rates, proportional relationships, and units": {
-                            "active": 48,
-                            "inactive": 35,
-                            "total": 83
-                        },
-                        "Probability and conditional probability": {
-                            "active": 14,
-                            "inactive": 29,
-                            "total": 43
-                        },
-                        "Percentages": {
-                            "active": 42,
-                            "inactive": 32,
-                            "total": 74
-                        },
-                        "One-variable data: Distributions and measures of center and spread": {
-                            "active": 33,
-                            "inactive": 38,
-                            "total": 71
-                        },
-                        "Two-variable data: Models and scatterplots": {
-                            "active": 31,
-                            "inactive": 32,
-                            "total": 63
-                        },
-                        "Evaluating statistical claims: Observational studies and experiments ": {
-                            "active": 0,
-                            "inactive": 10,
-                            "total": 10
-                        },
-                        "Lines, angles, and triangles": {
-                            "active": 39,
-                            "inactive": 32,
-                            "total": 71
-                        },
-                        "Area and volume": {
-                            "active": 43,
-                            "inactive": 24,
-                            "total": 67
-                        },
-                        "Right triangles and trigonometry": {
-                            "active": 25,
-                            "inactive": 19,
-                            "total": 44
-                        },
-                        "Circles": {
-                            "active": 20,
-                            "inactive": 19,
-                            "total": 39
-                        }
-                    },
-                    "by_difficulty": {
-                        "H": {
-                            "active": 252,
-                            "inactive": 229,
-                            "total": 481,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 63,
-                                    "inactive": 61,
-                                    "total": 124
-                                },
-                                "Advanced Math": {
-                                    "active": 90,
-                                    "inactive": 71,
-                                    "total": 161
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 40,
-                                    "inactive": 53,
-                                    "total": 93
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 59,
-                                    "inactive": 44,
-                                    "total": 103
-                                }
-                            }
-                        },
-                        "E": {
-                            "active": 361,
-                            "inactive": 210,
-                            "total": 571,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 158,
-                                    "inactive": 74,
-                                    "total": 232
-                                },
-                                "Advanced Math": {
-                                    "active": 81,
-                                    "inactive": 40,
-                                    "total": 121
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 85,
-                                    "inactive": 74,
-                                    "total": 159
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 37,
-                                    "inactive": 22,
-                                    "total": 59
-                                }
-                            }
-                        },
-                        "M": {
-                            "active": 266,
-                            "inactive": 237,
-                            "total": 503,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 98,
-                                    "inactive": 65,
-                                    "total": 163
-                                },
-                                "Advanced Math": {
-                                    "active": 86,
-                                    "inactive": 79,
-                                    "total": 165
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 51,
-                                    "inactive": 65,
-                                    "total": 116
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 31,
-                                    "inactive": 28,
-                                    "total": 59
-                                }
-                            }
-                        }
-                    },
-                    "by_score_band": {
-                        "6": {
-                            "active": 109,
-                            "inactive": 126,
-                            "total": 235,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 30,
-                                    "inactive": 34,
-                                    "total": 64
-                                },
-                                "Advanced Math": {
-                                    "active": 36,
-                                    "inactive": 40,
-                                    "total": 76
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 13,
-                                    "inactive": 29,
-                                    "total": 42
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 30,
-                                    "inactive": 23,
-                                    "total": 53
-                                }
-                            }
-                        },
-                        "2": {
-                            "active": 146,
-                            "inactive": 96,
-                            "total": 242,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 66,
-                                    "inactive": 30,
-                                    "total": 96
-                                },
-                                "Advanced Math": {
-                                    "active": 27,
-                                    "inactive": 21,
-                                    "total": 48
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 33,
-                                    "inactive": 36,
-                                    "total": 69
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 20,
-                                    "inactive": 9,
-                                    "total": 29
-                                }
-                            }
-                        },
-                        "5": {
-                            "active": 102,
-                            "inactive": 114,
-                            "total": 216,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 41,
-                                    "inactive": 28,
-                                    "total": 69
-                                },
-                                "Advanced Math": {
-                                    "active": 30,
-                                    "inactive": 44,
-                                    "total": 74
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 18,
-                                    "inactive": 28,
-                                    "total": 46
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 13,
-                                    "inactive": 14,
-                                    "total": 27
-                                }
-                            }
-                        },
-                        "4": {
-                            "active": 164,
-                            "inactive": 123,
-                            "total": 287,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 57,
-                                    "inactive": 37,
-                                    "total": 94
-                                },
-                                "Advanced Math": {
-                                    "active": 56,
-                                    "inactive": 35,
-                                    "total": 91
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 33,
-                                    "inactive": 37,
-                                    "total": 70
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 18,
-                                    "inactive": 14,
-                                    "total": 32
-                                }
-                            }
-                        },
-                        "3": {
-                            "active": 106,
-                            "inactive": 45,
-                            "total": 151,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 47,
-                                    "inactive": 15,
-                                    "total": 62
-                                },
-                                "Advanced Math": {
-                                    "active": 35,
-                                    "inactive": 9,
-                                    "total": 44
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 11,
-                                    "inactive": 13,
-                                    "total": 24
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 13,
-                                    "inactive": 8,
-                                    "total": 21
-                                }
-                            }
-                        },
-                        "7": {
-                            "active": 143,
-                            "inactive": 103,
-                            "total": 246,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 33,
-                                    "inactive": 27,
-                                    "total": 60
-                                },
-                                "Advanced Math": {
-                                    "active": 54,
-                                    "inactive": 31,
-                                    "total": 85
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 27,
-                                    "inactive": 24,
-                                    "total": 51
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 29,
-                                    "inactive": 21,
-                                    "total": 50
-                                }
-                            }
-                        },
-                        "1": {
-                            "active": 109,
-                            "inactive": 69,
-                            "total": 178,
-                            "categories": {
-                                "Algebra": {
-                                    "active": 45,
-                                    "inactive": 29,
-                                    "total": 74
-                                },
-                                "Advanced Math": {
-                                    "active": 19,
-                                    "inactive": 10,
-                                    "total": 29
-                                },
-                                "Problem-Solving and Data Analysis": {
-                                    "active": 41,
-                                    "inactive": 25,
-                                    "total": 66
-                                },
-                                "Geometry and Trigonometry": {
-                                    "active": 4,
-                                    "inactive": 5,
-                                    "total": 9
-                                }
-                            }
-                        }
-                    }
-                },
                 "RW": {
-                    "total": 1443,
-                    "active": 998,
+                    "total": 1270,
+                    "active": 825,
                     "inactive": 445,
                     "categories": {
                         "Information and Ideas": {
-                            "active": 274,
+                            "active": 225,
                             "inactive": 158,
-                            "total": 432
+                            "total": 383
                         },
                         "Craft and Structure": {
-                            "active": 259,
+                            "active": 213,
                             "inactive": 116,
-                            "total": 375
+                            "total": 329
                         },
                         "Expression of Ideas": {
-                            "active": 228,
+                            "active": 188,
                             "inactive": 81,
-                            "total": 309
+                            "total": 269
                         },
                         "Standard English Conventions": {
-                            "active": 237,
+                            "active": 199,
                             "inactive": 90,
-                            "total": 327
+                            "total": 289
                         }
                     },
                     "subcategories": {
-                        "Inferences": {
-                            "active": 65,
-                            "inactive": 41,
-                            "total": 106
+                        "Command of Evidence": {
+                            "active": 117,
+                            "inactive": 79,
+                            "total": 196
                         },
                         "Central Ideas and Details": {
-                            "active": 68,
+                            "active": 56,
                             "inactive": 38,
-                            "total": 106
+                            "total": 94
                         },
-                        "Command of Evidence": {
-                            "active": 141,
-                            "inactive": 79,
-                            "total": 220
+                        "Inferences": {
+                            "active": 52,
+                            "inactive": 41,
+                            "total": 93
                         },
                         "Words in Context": {
-                            "active": 158,
+                            "active": 133,
                             "inactive": 47,
-                            "total": 205
-                        },
-                        "Text Structure and Purpose": {
-                            "active": 82,
-                            "inactive": 35,
-                            "total": 117
+                            "total": 180
                         },
                         "Cross-Text Connections": {
-                            "active": 18,
+                            "active": 16,
                             "inactive": 33,
-                            "total": 51
+                            "total": 49
+                        },
+                        "Text Structure and Purpose": {
+                            "active": 63,
+                            "inactive": 35,
+                            "total": 98
                         },
                         "Cross-text Connections": {
                             "active": 1,
@@ -1970,296 +1582,684 @@
                             "total": 2
                         },
                         "Transitions": {
-                            "active": 112,
+                            "active": 92,
                             "inactive": 36,
-                            "total": 148
+                            "total": 128
                         },
                         "Rhetorical Synthesis": {
-                            "active": 116,
+                            "active": 96,
                             "inactive": 45,
-                            "total": 161
+                            "total": 141
                         },
                         "Boundaries": {
-                            "active": 119,
+                            "active": 100,
                             "inactive": 48,
-                            "total": 167
+                            "total": 148
                         },
                         "Form, Structure, and Sense": {
-                            "active": 118,
+                            "active": 99,
                             "inactive": 42,
-                            "total": 160
+                            "total": 141
                         }
                     },
                     "by_difficulty": {
                         "H": {
-                            "active": 289,
-                            "inactive": 148,
-                            "total": 437,
+                            "active": 338,
+                            "inactive": 223,
+                            "total": 561,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 114,
-                                    "inactive": 58,
-                                    "total": 172
+                                    "active": 133,
+                                    "inactive": 83,
+                                    "total": 216
                                 },
                                 "Craft and Structure": {
-                                    "active": 59,
-                                    "inactive": 35,
-                                    "total": 94
+                                    "active": 74,
+                                    "inactive": 52,
+                                    "total": 126
                                 },
                                 "Expression of Ideas": {
-                                    "active": 39,
-                                    "inactive": 26,
-                                    "total": 65
+                                    "active": 58,
+                                    "inactive": 41,
+                                    "total": 99
                                 },
                                 "Standard English Conventions": {
-                                    "active": 77,
-                                    "inactive": 29,
-                                    "total": 106
-                                }
-                            }
-                        },
-                        "M": {
-                            "active": 344,
-                            "inactive": 147,
-                            "total": 491,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 102,
+                                    "active": 73,
                                     "inactive": 47,
-                                    "total": 149
-                                },
-                                "Craft and Structure": {
-                                    "active": 76,
-                                    "inactive": 38,
-                                    "total": 114
-                                },
-                                "Expression of Ideas": {
-                                    "active": 115,
-                                    "inactive": 28,
-                                    "total": 143
-                                },
-                                "Standard English Conventions": {
-                                    "active": 51,
-                                    "inactive": 34,
-                                    "total": 85
+                                    "total": 120
                                 }
                             }
                         },
                         "E": {
-                            "active": 365,
-                            "inactive": 150,
-                            "total": 515,
+                            "active": 139,
+                            "inactive": 89,
+                            "total": 228,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 58,
-                                    "inactive": 53,
-                                    "total": 111
+                                    "active": 11,
+                                    "inactive": 32,
+                                    "total": 43
                                 },
                                 "Craft and Structure": {
-                                    "active": 124,
-                                    "inactive": 43,
-                                    "total": 167
+                                    "active": 51,
+                                    "inactive": 25,
+                                    "total": 76
                                 },
                                 "Expression of Ideas": {
-                                    "active": 74,
-                                    "inactive": 27,
-                                    "total": 101
+                                    "active": 20,
+                                    "inactive": 16,
+                                    "total": 36
                                 },
                                 "Standard English Conventions": {
-                                    "active": 109,
+                                    "active": 57,
+                                    "inactive": 16,
+                                    "total": 73
+                                }
+                            }
+                        },
+                        "M": {
+                            "active": 348,
+                            "inactive": 133,
+                            "total": 481,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 81,
+                                    "inactive": 43,
+                                    "total": 124
+                                },
+                                "Craft and Structure": {
+                                    "active": 88,
+                                    "inactive": 39,
+                                    "total": 127
+                                },
+                                "Expression of Ideas": {
+                                    "active": 110,
+                                    "inactive": 24,
+                                    "total": 134
+                                },
+                                "Standard English Conventions": {
+                                    "active": 69,
                                     "inactive": 27,
-                                    "total": 136
+                                    "total": 96
                                 }
                             }
                         }
                     },
                     "by_score_band": {
                         "7": {
-                            "active": 139,
+                            "active": 95,
                             "inactive": 69,
-                            "total": 208,
+                            "total": 164,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 54,
+                                    "active": 36,
                                     "inactive": 26,
-                                    "total": 80
+                                    "total": 62
                                 },
                                 "Craft and Structure": {
-                                    "active": 25,
+                                    "active": 18,
                                     "inactive": 16,
-                                    "total": 41
+                                    "total": 34
                                 },
                                 "Expression of Ideas": {
-                                    "active": 12,
+                                    "active": 7,
                                     "inactive": 14,
-                                    "total": 26
+                                    "total": 21
                                 },
                                 "Standard English Conventions": {
-                                    "active": 48,
+                                    "active": 34,
                                     "inactive": 13,
-                                    "total": 61
-                                }
-                            }
-                        },
-                        "4": {
-                            "active": 207,
-                            "inactive": 72,
-                            "total": 279,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 55,
-                                    "inactive": 22,
-                                    "total": 77
-                                },
-                                "Craft and Structure": {
-                                    "active": 46,
-                                    "inactive": 21,
-                                    "total": 67
-                                },
-                                "Expression of Ideas": {
-                                    "active": 80,
-                                    "inactive": 13,
-                                    "total": 93
-                                },
-                                "Standard English Conventions": {
-                                    "active": 26,
-                                    "inactive": 16,
-                                    "total": 42
-                                }
-                            }
-                        },
-                        "5": {
-                            "active": 137,
-                            "inactive": 75,
-                            "total": 212,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 47,
-                                    "inactive": 25,
-                                    "total": 72
-                                },
-                                "Craft and Structure": {
-                                    "active": 30,
-                                    "inactive": 17,
                                     "total": 47
-                                },
-                                "Expression of Ideas": {
-                                    "active": 35,
-                                    "inactive": 15,
-                                    "total": 50
-                                },
-                                "Standard English Conventions": {
-                                    "active": 25,
-                                    "inactive": 18,
-                                    "total": 43
-                                }
-                            }
-                        },
-                        "3": {
-                            "active": 178,
-                            "inactive": 61,
-                            "total": 239,
-                            "categories": {
-                                "Information and Ideas": {
-                                    "active": 31,
-                                    "inactive": 21,
-                                    "total": 52
-                                },
-                                "Craft and Structure": {
-                                    "active": 51,
-                                    "inactive": 18,
-                                    "total": 69
-                                },
-                                "Expression of Ideas": {
-                                    "active": 50,
-                                    "inactive": 11,
-                                    "total": 61
-                                },
-                                "Standard English Conventions": {
-                                    "active": 46,
-                                    "inactive": 11,
-                                    "total": 57
                                 }
                             }
                         },
                         "2": {
-                            "active": 134,
+                            "active": 113,
                             "inactive": 44,
-                            "total": 178,
+                            "total": 157,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 15,
+                                    "active": 11,
                                     "inactive": 16,
-                                    "total": 31
+                                    "total": 27
                                 },
                                 "Craft and Structure": {
-                                    "active": 48,
+                                    "active": 38,
                                     "inactive": 12,
-                                    "total": 60
+                                    "total": 50
                                 },
                                 "Expression of Ideas": {
-                                    "active": 20,
+                                    "active": 17,
                                     "inactive": 8,
-                                    "total": 28
+                                    "total": 25
                                 },
                                 "Standard English Conventions": {
-                                    "active": 51,
+                                    "active": 47,
                                     "inactive": 8,
-                                    "total": 59
+                                    "total": 55
+                                }
+                            }
+                        },
+                        "5": {
+                            "active": 119,
+                            "inactive": 75,
+                            "total": 194,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 43,
+                                    "inactive": 25,
+                                    "total": 68
+                                },
+                                "Craft and Structure": {
+                                    "active": 27,
+                                    "inactive": 17,
+                                    "total": 44
+                                },
+                                "Expression of Ideas": {
+                                    "active": 30,
+                                    "inactive": 15,
+                                    "total": 45
+                                },
+                                "Standard English Conventions": {
+                                    "active": 19,
+                                    "inactive": 18,
+                                    "total": 37
                                 }
                             }
                         },
                         "6": {
-                            "active": 150,
+                            "active": 124,
                             "inactive": 79,
-                            "total": 229,
+                            "total": 203,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 60,
+                                    "active": 54,
                                     "inactive": 32,
-                                    "total": 92
+                                    "total": 86
                                 },
                                 "Craft and Structure": {
-                                    "active": 34,
+                                    "active": 29,
                                     "inactive": 19,
-                                    "total": 53
+                                    "total": 48
                                 },
                                 "Expression of Ideas": {
-                                    "active": 27,
+                                    "active": 21,
                                     "inactive": 12,
-                                    "total": 39
+                                    "total": 33
                                 },
                                 "Standard English Conventions": {
-                                    "active": 29,
+                                    "active": 20,
                                     "inactive": 16,
-                                    "total": 45
+                                    "total": 36
                                 }
                             }
                         },
                         "1": {
-                            "active": 53,
+                            "active": 26,
                             "inactive": 45,
-                            "total": 98,
+                            "total": 71,
                             "categories": {
                                 "Information and Ideas": {
-                                    "active": 12,
+                                    "active": 0,
                                     "inactive": 16,
-                                    "total": 28
+                                    "total": 16
                                 },
                                 "Craft and Structure": {
-                                    "active": 25,
+                                    "active": 13,
                                     "inactive": 13,
-                                    "total": 38
+                                    "total": 26
                                 },
                                 "Expression of Ideas": {
-                                    "active": 4,
+                                    "active": 3,
                                     "inactive": 8,
-                                    "total": 12
+                                    "total": 11
                                 },
                                 "Standard English Conventions": {
-                                    "active": 12,
+                                    "active": 10,
                                     "inactive": 8,
-                                    "total": 20
+                                    "total": 18
+                                }
+                            }
+                        },
+                        "4": {
+                            "active": 189,
+                            "inactive": 72,
+                            "total": 261,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 53,
+                                    "inactive": 22,
+                                    "total": 75
+                                },
+                                "Craft and Structure": {
+                                    "active": 40,
+                                    "inactive": 21,
+                                    "total": 61
+                                },
+                                "Expression of Ideas": {
+                                    "active": 72,
+                                    "inactive": 13,
+                                    "total": 85
+                                },
+                                "Standard English Conventions": {
+                                    "active": 24,
+                                    "inactive": 16,
+                                    "total": 40
+                                }
+                            }
+                        },
+                        "3": {
+                            "active": 159,
+                            "inactive": 61,
+                            "total": 220,
+                            "categories": {
+                                "Information and Ideas": {
+                                    "active": 28,
+                                    "inactive": 21,
+                                    "total": 49
+                                },
+                                "Craft and Structure": {
+                                    "active": 48,
+                                    "inactive": 18,
+                                    "total": 66
+                                },
+                                "Expression of Ideas": {
+                                    "active": 38,
+                                    "inactive": 11,
+                                    "total": 49
+                                },
+                                "Standard English Conventions": {
+                                    "active": 45,
+                                    "inactive": 11,
+                                    "total": 56
+                                }
+                            }
+                        }
+                    }
+                },
+                "MATH": {
+                    "total": 1301,
+                    "active": 683,
+                    "inactive": 618,
+                    "categories": {
+                        "Algebra": {
+                            "active": 259,
+                            "inactive": 200,
+                            "total": 459
+                        },
+                        "Advanced Math": {
+                            "active": 196,
+                            "inactive": 168,
+                            "total": 364
+                        },
+                        "Problem-Solving and Data Analysis": {
+                            "active": 147,
+                            "inactive": 181,
+                            "total": 328
+                        },
+                        "Geometry and Trigonometry": {
+                            "active": 81,
+                            "inactive": 69,
+                            "total": 150
+                        }
+                    },
+                    "subcategories": {
+                        "Linear equations in two variables": {
+                            "active": 59,
+                            "inactive": 42,
+                            "total": 101
+                        },
+                        "Linear equations in one variable": {
+                            "active": 43,
+                            "inactive": 40,
+                            "total": 83
+                        },
+                        "Systems of two linear equations in two variables": {
+                            "active": 51,
+                            "inactive": 39,
+                            "total": 90
+                        },
+                        "Linear functions": {
+                            "active": 74,
+                            "inactive": 51,
+                            "total": 125
+                        },
+                        "Linear inequalities in one or two variables": {
+                            "active": 32,
+                            "inactive": 28,
+                            "total": 60
+                        },
+                        "Nonlinear functions": {
+                            "active": 104,
+                            "inactive": 65,
+                            "total": 169
+                        },
+                        "Nonlinear equations in one variable and systems of equations in two variables ": {
+                            "active": 65,
+                            "inactive": 58,
+                            "total": 123
+                        },
+                        "Equivalent expressions": {
+                            "active": 27,
+                            "inactive": 45,
+                            "total": 72
+                        },
+                        "Two-variable data: Models and scatterplots": {
+                            "active": 26,
+                            "inactive": 32,
+                            "total": 58
+                        },
+                        "Inference from sample statistics and margin of error ": {
+                            "active": 6,
+                            "inactive": 15,
+                            "total": 21
+                        },
+                        "Ratios, rates, proportional relationships, and units": {
+                            "active": 40,
+                            "inactive": 35,
+                            "total": 75
+                        },
+                        "One-variable data: Distributions and measures of center and spread": {
+                            "active": 28,
+                            "inactive": 38,
+                            "total": 66
+                        },
+                        "Percentages": {
+                            "active": 35,
+                            "inactive": 32,
+                            "total": 67
+                        },
+                        "Probability and conditional probability": {
+                            "active": 12,
+                            "inactive": 29,
+                            "total": 41
+                        },
+                        "Lines, angles, and triangles": {
+                            "active": 30,
+                            "inactive": 32,
+                            "total": 62
+                        },
+                        "Area and volume": {
+                            "active": 36,
+                            "inactive": 24,
+                            "total": 60
+                        },
+                        "Right triangles and trigonometry": {
+                            "active": 15,
+                            "inactive": 13,
+                            "total": 28
+                        }
+                    },
+                    "by_difficulty": {
+                        "M": {
+                            "active": 210,
+                            "inactive": 159,
+                            "total": 369,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 82,
+                                    "inactive": 52,
+                                    "total": 134
+                                },
+                                "Advanced Math": {
+                                    "active": 68,
+                                    "inactive": 38,
+                                    "total": 106
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 38,
+                                    "inactive": 48,
+                                    "total": 86
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 22,
+                                    "inactive": 21,
+                                    "total": 43
+                                }
+                            }
+                        },
+                        "E": {
+                            "active": 212,
+                            "inactive": 163,
+                            "total": 375,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 95,
+                                    "inactive": 59,
+                                    "total": 154
+                                },
+                                "Advanced Math": {
+                                    "active": 38,
+                                    "inactive": 31,
+                                    "total": 69
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 60,
+                                    "inactive": 59,
+                                    "total": 119
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 19,
+                                    "inactive": 14,
+                                    "total": 33
+                                }
+                            }
+                        },
+                        "H": {
+                            "active": 261,
+                            "inactive": 296,
+                            "total": 557,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 82,
+                                    "inactive": 89,
+                                    "total": 171
+                                },
+                                "Advanced Math": {
+                                    "active": 90,
+                                    "inactive": 99,
+                                    "total": 189
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 49,
+                                    "inactive": 74,
+                                    "total": 123
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 40,
+                                    "inactive": 34,
+                                    "total": 74
+                                }
+                            }
+                        }
+                    },
+                    "by_score_band": {
+                        "3": {
+                            "active": 92,
+                            "inactive": 44,
+                            "total": 136,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 42,
+                                    "inactive": 15,
+                                    "total": 57
+                                },
+                                "Advanced Math": {
+                                    "active": 27,
+                                    "inactive": 9,
+                                    "total": 36
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 11,
+                                    "inactive": 13,
+                                    "total": 24
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 12,
+                                    "inactive": 7,
+                                    "total": 19
+                                }
+                            }
+                        },
+                        "2": {
+                            "active": 123,
+                            "inactive": 94,
+                            "total": 217,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 60,
+                                    "inactive": 30,
+                                    "total": 90
+                                },
+                                "Advanced Math": {
+                                    "active": 22,
+                                    "inactive": 21,
+                                    "total": 43
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 25,
+                                    "inactive": 34,
+                                    "total": 59
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 16,
+                                    "inactive": 9,
+                                    "total": 25
+                                }
+                            }
+                        },
+                        "4": {
+                            "active": 118,
+                            "inactive": 115,
+                            "total": 233,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 40,
+                                    "inactive": 37,
+                                    "total": 77
+                                },
+                                "Advanced Math": {
+                                    "active": 41,
+                                    "inactive": 29,
+                                    "total": 70
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 27,
+                                    "inactive": 35,
+                                    "total": 62
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 10,
+                                    "inactive": 14,
+                                    "total": 24
+                                }
+                            }
+                        },
+                        "1": {
+                            "active": 89,
+                            "inactive": 69,
+                            "total": 158,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 35,
+                                    "inactive": 29,
+                                    "total": 64
+                                },
+                                "Advanced Math": {
+                                    "active": 16,
+                                    "inactive": 10,
+                                    "total": 26
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 35,
+                                    "inactive": 25,
+                                    "total": 60
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 3,
+                                    "inactive": 5,
+                                    "total": 8
+                                }
+                            }
+                        },
+                        "7": {
+                            "active": 100,
+                            "inactive": 90,
+                            "total": 190,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 25,
+                                    "inactive": 27,
+                                    "total": 52
+                                },
+                                "Advanced Math": {
+                                    "active": 40,
+                                    "inactive": 28,
+                                    "total": 68
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 23,
+                                    "inactive": 22,
+                                    "total": 45
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 12,
+                                    "inactive": 13,
+                                    "total": 25
+                                }
+                            }
+                        },
+                        "5": {
+                            "active": 81,
+                            "inactive": 103,
+                            "total": 184,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 34,
+                                    "inactive": 28,
+                                    "total": 62
+                                },
+                                "Advanced Math": {
+                                    "active": 21,
+                                    "inactive": 40,
+                                    "total": 61
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 16,
+                                    "inactive": 27,
+                                    "total": 43
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 10,
+                                    "inactive": 8,
+                                    "total": 18
+                                }
+                            }
+                        },
+                        "6": {
+                            "active": 80,
+                            "inactive": 103,
+                            "total": 183,
+                            "categories": {
+                                "Algebra": {
+                                    "active": 23,
+                                    "inactive": 34,
+                                    "total": 57
+                                },
+                                "Advanced Math": {
+                                    "active": 29,
+                                    "inactive": 31,
+                                    "total": 60
+                                },
+                                "Problem-Solving and Data Analysis": {
+                                    "active": 10,
+                                    "inactive": 25,
+                                    "total": 35
+                                },
+                                "Geometry and Trigonometry": {
+                                    "active": 18,
+                                    "inactive": 13,
+                                    "total": 31
                                 }
                             }
                         }
@@ -2269,26 +2269,6 @@
         }
     },
     "by_main_category_overall": {
-        "Algebra": {
-            "active": 883,
-            "inactive": 584,
-            "total": 1467
-        },
-        "Advanced Math": {
-            "active": 657,
-            "inactive": 469,
-            "total": 1126
-        },
-        "Problem-Solving and Data Analysis": {
-            "active": 486,
-            "inactive": 527,
-            "total": 1013
-        },
-        "Geometry and Trigonometry": {
-            "active": 294,
-            "inactive": 202,
-            "total": 496
-        },
         "Information and Ideas": {
             "active": 744,
             "inactive": 427,
@@ -2308,123 +2288,58 @@
             "active": 656,
             "inactive": 251,
             "total": 907
+        },
+        "Algebra": {
+            "active": 883,
+            "inactive": 584,
+            "total": 1467
+        },
+        "Advanced Math": {
+            "active": 657,
+            "inactive": 469,
+            "total": 1126
+        },
+        "Problem-Solving and Data Analysis": {
+            "active": 486,
+            "inactive": 527,
+            "total": 1013
+        },
+        "Geometry and Trigonometry": {
+            "active": 294,
+            "inactive": 202,
+            "total": 496
         }
     },
     "by_subcategory_overall": {
-        "Linear equations in two variables": {
-            "active": 201,
-            "inactive": 126,
-            "total": 327
-        },
-        "Linear equations in one variable": {
-            "active": 151,
-            "inactive": 112,
-            "total": 263
-        },
-        "Systems of two linear equations in two variables": {
-            "active": 178,
+        "Inferences": {
+            "active": 173,
             "inactive": 109,
-            "total": 287
-        },
-        "Linear functions": {
-            "active": 252,
-            "inactive": 153,
-            "total": 405
-        },
-        "Linear inequalities in one or two variables": {
-            "active": 101,
-            "inactive": 84,
-            "total": 185
-        },
-        "Nonlinear functions": {
-            "active": 346,
-            "inactive": 157,
-            "total": 503
-        },
-        "Nonlinear equations in one variable and systems of equations in two variables ": {
-            "active": 213,
-            "inactive": 162,
-            "total": 375
-        },
-        "Equivalent expressions": {
-            "active": 98,
-            "inactive": 150,
-            "total": 248
-        },
-        "Two-variable data: Models and scatterplots": {
-            "active": 85,
-            "inactive": 87,
-            "total": 172
-        },
-        "Inference from sample statistics and margin of error ": {
-            "active": 14,
-            "inactive": 31,
-            "total": 45
-        },
-        "Ratios, rates, proportional relationships, and units": {
-            "active": 136,
-            "inactive": 105,
-            "total": 241
-        },
-        "One-variable data: Distributions and measures of center and spread": {
-            "active": 92,
-            "inactive": 111,
-            "total": 203
-        },
-        "Percentages": {
-            "active": 119,
-            "inactive": 96,
-            "total": 215
-        },
-        "Probability and conditional probability": {
-            "active": 40,
-            "inactive": 87,
-            "total": 127
-        },
-        "Lines, angles, and triangles": {
-            "active": 95,
-            "inactive": 75,
-            "total": 170
-        },
-        "Area and volume": {
-            "active": 122,
-            "inactive": 72,
-            "total": 194
-        },
-        "Right triangles and trigonometry": {
-            "active": 57,
-            "inactive": 36,
-            "total": 93
-        },
-        "Command of Evidence": {
-            "active": 386,
-            "inactive": 214,
-            "total": 600
+            "total": 282
         },
         "Central Ideas and Details": {
             "active": 185,
             "inactive": 104,
             "total": 289
         },
-        "Inferences": {
-            "active": 173,
-            "inactive": 109,
-            "total": 282
+        "Command of Evidence": {
+            "active": 386,
+            "inactive": 214,
+            "total": 600
         },
         "Words in Context": {
             "active": 436,
             "inactive": 125,
             "total": 561
         },
-        "Cross-Text Connections": {
-            "active": 50,
-            "inactive": 86,
-            "total": 136
-        },
         "Text Structure and Purpose": {
             "active": 218,
             "inactive": 93,
             "total": 311
+        },
+        "Cross-Text Connections": {
+            "active": 50,
+            "inactive": 86,
+            "total": 136
         },
         "Cross-text Connections": {
             "active": 3,
@@ -2451,6 +2366,91 @@
             "inactive": 117,
             "total": 446
         },
+        "Linear functions": {
+            "active": 252,
+            "inactive": 153,
+            "total": 405
+        },
+        "Linear equations in two variables": {
+            "active": 201,
+            "inactive": 126,
+            "total": 327
+        },
+        "Systems of two linear equations in two variables": {
+            "active": 178,
+            "inactive": 109,
+            "total": 287
+        },
+        "Linear equations in one variable": {
+            "active": 151,
+            "inactive": 112,
+            "total": 263
+        },
+        "Linear inequalities in one or two variables": {
+            "active": 101,
+            "inactive": 84,
+            "total": 185
+        },
+        "Nonlinear functions": {
+            "active": 346,
+            "inactive": 157,
+            "total": 503
+        },
+        "Nonlinear equations in one variable and systems of equations in two variables ": {
+            "active": 213,
+            "inactive": 162,
+            "total": 375
+        },
+        "Equivalent expressions": {
+            "active": 98,
+            "inactive": 150,
+            "total": 248
+        },
+        "One-variable data: Distributions and measures of center and spread": {
+            "active": 92,
+            "inactive": 111,
+            "total": 203
+        },
+        "Two-variable data: Models and scatterplots": {
+            "active": 85,
+            "inactive": 87,
+            "total": 172
+        },
+        "Ratios, rates, proportional relationships, and units": {
+            "active": 136,
+            "inactive": 105,
+            "total": 241
+        },
+        "Percentages": {
+            "active": 119,
+            "inactive": 96,
+            "total": 215
+        },
+        "Probability and conditional probability": {
+            "active": 40,
+            "inactive": 87,
+            "total": 127
+        },
+        "Area and volume": {
+            "active": 122,
+            "inactive": 72,
+            "total": 194
+        },
+        "Lines, angles, and triangles": {
+            "active": 95,
+            "inactive": 75,
+            "total": 170
+        },
+        "Right triangles and trigonometry": {
+            "active": 57,
+            "inactive": 36,
+            "total": 93
+        },
+        "Inference from sample statistics and margin of error ": {
+            "active": 14,
+            "inactive": 31,
+            "total": 45
+        },
         "Evaluating statistical claims: Observational studies and experiments ": {
             "active": 0,
             "inactive": 10,
@@ -2463,125 +2463,11 @@
         }
     },
     "by_difficulty_overall": {
-        "M": {
-            "active": 1705,
-            "inactive": 896,
-            "total": 2601,
-            "categories": {
-                "Algebra": {
-                    "active": 292,
-                    "inactive": 161,
-                    "total": 453
-                },
-                "Advanced Math": {
-                    "active": 212,
-                    "inactive": 143,
-                    "total": 355
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 129,
-                    "inactive": 153,
-                    "total": 282
-                },
-                "Geometry and Trigonometry": {
-                    "active": 80,
-                    "inactive": 58,
-                    "total": 138
-                },
-                "Information and Ideas": {
-                    "active": 228,
-                    "inactive": 127,
-                    "total": 355
-                },
-                "Craft and Structure": {
-                    "active": 256,
-                    "inactive": 106,
-                    "total": 362
-                },
-                "Expression of Ideas": {
-                    "active": 294,
-                    "inactive": 69,
-                    "total": 363
-                },
-                "Standard English Conventions": {
-                    "active": 214,
-                    "inactive": 79,
-                    "total": 293
-                }
-            }
-        },
-        "E": {
-            "active": 1239,
-            "inactive": 722,
-            "total": 1961,
-            "categories": {
-                "Algebra": {
-                    "active": 298,
-                    "inactive": 160,
-                    "total": 458
-                },
-                "Advanced Math": {
-                    "active": 138,
-                    "inactive": 80,
-                    "total": 218
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 186,
-                    "inactive": 158,
-                    "total": 344
-                },
-                "Geometry and Trigonometry": {
-                    "active": 60,
-                    "inactive": 40,
-                    "total": 100
-                },
-                "Information and Ideas": {
-                    "active": 81,
-                    "inactive": 101,
-                    "total": 182
-                },
-                "Craft and Structure": {
-                    "active": 200,
-                    "inactive": 81,
-                    "total": 281
-                },
-                "Expression of Ideas": {
-                    "active": 98,
-                    "inactive": 51,
-                    "total": 149
-                },
-                "Standard English Conventions": {
-                    "active": 178,
-                    "inactive": 51,
-                    "total": 229
-                }
-            }
-        },
         "H": {
             "active": 2109,
             "inactive": 1369,
             "total": 3478,
             "categories": {
-                "Algebra": {
-                    "active": 293,
-                    "inactive": 263,
-                    "total": 556
-                },
-                "Advanced Math": {
-                    "active": 307,
-                    "inactive": 246,
-                    "total": 553
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 171,
-                    "inactive": 216,
-                    "total": 387
-                },
-                "Geometry and Trigonometry": {
-                    "active": 154,
-                    "inactive": 104,
-                    "total": 258
-                },
                 "Information and Ideas": {
                     "active": 435,
                     "inactive": 199,
@@ -2601,224 +2487,130 @@
                     "active": 264,
                     "inactive": 121,
                     "total": 385
+                },
+                "Algebra": {
+                    "active": 293,
+                    "inactive": 263,
+                    "total": 556
+                },
+                "Advanced Math": {
+                    "active": 307,
+                    "inactive": 246,
+                    "total": 553
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 171,
+                    "inactive": 216,
+                    "total": 387
+                },
+                "Geometry and Trigonometry": {
+                    "active": 154,
+                    "inactive": 104,
+                    "total": 258
+                }
+            }
+        },
+        "M": {
+            "active": 1705,
+            "inactive": 896,
+            "total": 2601,
+            "categories": {
+                "Information and Ideas": {
+                    "active": 228,
+                    "inactive": 127,
+                    "total": 355
+                },
+                "Craft and Structure": {
+                    "active": 256,
+                    "inactive": 106,
+                    "total": 362
+                },
+                "Expression of Ideas": {
+                    "active": 294,
+                    "inactive": 69,
+                    "total": 363
+                },
+                "Standard English Conventions": {
+                    "active": 214,
+                    "inactive": 79,
+                    "total": 293
+                },
+                "Algebra": {
+                    "active": 292,
+                    "inactive": 161,
+                    "total": 453
+                },
+                "Advanced Math": {
+                    "active": 212,
+                    "inactive": 143,
+                    "total": 355
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 129,
+                    "inactive": 153,
+                    "total": 282
+                },
+                "Geometry and Trigonometry": {
+                    "active": 80,
+                    "inactive": 58,
+                    "total": 138
+                }
+            }
+        },
+        "E": {
+            "active": 1239,
+            "inactive": 722,
+            "total": 1961,
+            "categories": {
+                "Information and Ideas": {
+                    "active": 81,
+                    "inactive": 101,
+                    "total": 182
+                },
+                "Craft and Structure": {
+                    "active": 200,
+                    "inactive": 81,
+                    "total": 281
+                },
+                "Expression of Ideas": {
+                    "active": 98,
+                    "inactive": 51,
+                    "total": 149
+                },
+                "Standard English Conventions": {
+                    "active": 178,
+                    "inactive": 51,
+                    "total": 229
+                },
+                "Algebra": {
+                    "active": 298,
+                    "inactive": 160,
+                    "total": 458
+                },
+                "Advanced Math": {
+                    "active": 138,
+                    "inactive": 80,
+                    "total": 218
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 186,
+                    "inactive": 158,
+                    "total": 344
+                },
+                "Geometry and Trigonometry": {
+                    "active": 60,
+                    "inactive": 40,
+                    "total": 100
                 }
             }
         }
     },
     "by_score_band_overall": {
-        "3": {
-            "active": 800,
-            "inactive": 304,
-            "total": 1104,
-            "categories": {
-                "Algebra": {
-                    "active": 135,
-                    "inactive": 44,
-                    "total": 179
-                },
-                "Advanced Math": {
-                    "active": 94,
-                    "inactive": 24,
-                    "total": 118
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 32,
-                    "inactive": 37,
-                    "total": 69
-                },
-                "Geometry and Trigonometry": {
-                    "active": 35,
-                    "inactive": 20,
-                    "total": 55
-                },
-                "Information and Ideas": {
-                    "active": 89,
-                    "inactive": 63,
-                    "total": 152
-                },
-                "Craft and Structure": {
-                    "active": 144,
-                    "inactive": 53,
-                    "total": 197
-                },
-                "Expression of Ideas": {
-                    "active": 137,
-                    "inactive": 31,
-                    "total": 168
-                },
-                "Standard English Conventions": {
-                    "active": 134,
-                    "inactive": 32,
-                    "total": 166
-                }
-            }
-        },
-        "2": {
-            "active": 788,
-            "inactive": 405,
-            "total": 1193,
-            "categories": {
-                "Algebra": {
-                    "active": 192,
-                    "inactive": 90,
-                    "total": 282
-                },
-                "Advanced Math": {
-                    "active": 75,
-                    "inactive": 62,
-                    "total": 137
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 88,
-                    "inactive": 99,
-                    "total": 187
-                },
-                "Geometry and Trigonometry": {
-                    "active": 53,
-                    "inactive": 22,
-                    "total": 75
-                },
-                "Information and Ideas": {
-                    "active": 41,
-                    "inactive": 48,
-                    "total": 89
-                },
-                "Craft and Structure": {
-                    "active": 133,
-                    "inactive": 36,
-                    "total": 169
-                },
-                "Expression of Ideas": {
-                    "active": 57,
-                    "inactive": 24,
-                    "total": 81
-                },
-                "Standard English Conventions": {
-                    "active": 149,
-                    "inactive": 24,
-                    "total": 173
-                }
-            }
-        },
-        "4": {
-            "active": 1020,
-            "inactive": 535,
-            "total": 1555,
-            "categories": {
-                "Algebra": {
-                    "active": 153,
-                    "inactive": 109,
-                    "total": 262
-                },
-                "Advanced Math": {
-                    "active": 143,
-                    "inactive": 84,
-                    "total": 227
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 90,
-                    "inactive": 98,
-                    "total": 188
-                },
-                "Geometry and Trigonometry": {
-                    "active": 42,
-                    "inactive": 35,
-                    "total": 77
-                },
-                "Information and Ideas": {
-                    "active": 161,
-                    "inactive": 64,
-                    "total": 225
-                },
-                "Craft and Structure": {
-                    "active": 131,
-                    "inactive": 62,
-                    "total": 193
-                },
-                "Expression of Ideas": {
-                    "active": 224,
-                    "inactive": 37,
-                    "total": 261
-                },
-                "Standard English Conventions": {
-                    "active": 76,
-                    "inactive": 46,
-                    "total": 122
-                }
-            }
-        },
-        "1": {
-            "active": 439,
-            "inactive": 338,
-            "total": 777,
-            "categories": {
-                "Algebra": {
-                    "active": 125,
-                    "inactive": 85,
-                    "total": 210
-                },
-                "Advanced Math": {
-                    "active": 54,
-                    "inactive": 29,
-                    "total": 83
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 117,
-                    "inactive": 75,
-                    "total": 192
-                },
-                "Geometry and Trigonometry": {
-                    "active": 11,
-                    "inactive": 14,
-                    "total": 25
-                },
-                "Information and Ideas": {
-                    "active": 24,
-                    "inactive": 48,
-                    "total": 72
-                },
-                "Craft and Structure": {
-                    "active": 63,
-                    "inactive": 39,
-                    "total": 102
-                },
-                "Expression of Ideas": {
-                    "active": 11,
-                    "inactive": 24,
-                    "total": 35
-                },
-                "Standard English Conventions": {
-                    "active": 34,
-                    "inactive": 24,
-                    "total": 58
-                }
-            }
-        },
         "7": {
             "active": 705,
             "inactive": 395,
             "total": 1100,
             "categories": {
-                "Algebra": {
-                    "active": 88,
-                    "inactive": 74,
-                    "total": 162
-                },
-                "Advanced Math": {
-                    "active": 132,
-                    "inactive": 69,
-                    "total": 201
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 75,
-                    "inactive": 64,
-                    "total": 139
-                },
-                "Geometry and Trigonometry": {
-                    "active": 57,
-                    "inactive": 38,
-                    "total": 95
-                },
                 "Information and Ideas": {
                     "active": 137,
                     "inactive": 57,
@@ -2838,6 +2630,73 @@
                     "active": 121,
                     "inactive": 28,
                     "total": 149
+                },
+                "Algebra": {
+                    "active": 88,
+                    "inactive": 74,
+                    "total": 162
+                },
+                "Advanced Math": {
+                    "active": 132,
+                    "inactive": 69,
+                    "total": 201
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 75,
+                    "inactive": 64,
+                    "total": 139
+                },
+                "Geometry and Trigonometry": {
+                    "active": 57,
+                    "inactive": 38,
+                    "total": 95
+                }
+            }
+        },
+        "4": {
+            "active": 1020,
+            "inactive": 535,
+            "total": 1555,
+            "categories": {
+                "Information and Ideas": {
+                    "active": 161,
+                    "inactive": 64,
+                    "total": 225
+                },
+                "Craft and Structure": {
+                    "active": 131,
+                    "inactive": 62,
+                    "total": 193
+                },
+                "Expression of Ideas": {
+                    "active": 224,
+                    "inactive": 37,
+                    "total": 261
+                },
+                "Standard English Conventions": {
+                    "active": 76,
+                    "inactive": 46,
+                    "total": 122
+                },
+                "Algebra": {
+                    "active": 153,
+                    "inactive": 109,
+                    "total": 262
+                },
+                "Advanced Math": {
+                    "active": 143,
+                    "inactive": 84,
+                    "total": 227
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 90,
+                    "inactive": 98,
+                    "total": 188
+                },
+                "Geometry and Trigonometry": {
+                    "active": 42,
+                    "inactive": 35,
+                    "total": 77
                 }
             }
         },
@@ -2846,26 +2705,6 @@
             "inactive": 498,
             "total": 1140,
             "categories": {
-                "Algebra": {
-                    "active": 113,
-                    "inactive": 82,
-                    "total": 195
-                },
-                "Advanced Math": {
-                    "active": 72,
-                    "inactive": 110,
-                    "total": 182
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 49,
-                    "inactive": 77,
-                    "total": 126
-                },
-                "Geometry and Trigonometry": {
-                    "active": 30,
-                    "inactive": 28,
-                    "total": 58
-                },
                 "Information and Ideas": {
                     "active": 133,
                     "inactive": 68,
@@ -2885,6 +2724,120 @@
                     "active": 67,
                     "inactive": 52,
                     "total": 119
+                },
+                "Algebra": {
+                    "active": 113,
+                    "inactive": 82,
+                    "total": 195
+                },
+                "Advanced Math": {
+                    "active": 72,
+                    "inactive": 110,
+                    "total": 182
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 49,
+                    "inactive": 77,
+                    "total": 126
+                },
+                "Geometry and Trigonometry": {
+                    "active": 30,
+                    "inactive": 28,
+                    "total": 58
+                }
+            }
+        },
+        "3": {
+            "active": 800,
+            "inactive": 304,
+            "total": 1104,
+            "categories": {
+                "Information and Ideas": {
+                    "active": 89,
+                    "inactive": 63,
+                    "total": 152
+                },
+                "Craft and Structure": {
+                    "active": 144,
+                    "inactive": 53,
+                    "total": 197
+                },
+                "Expression of Ideas": {
+                    "active": 137,
+                    "inactive": 31,
+                    "total": 168
+                },
+                "Standard English Conventions": {
+                    "active": 134,
+                    "inactive": 32,
+                    "total": 166
+                },
+                "Algebra": {
+                    "active": 135,
+                    "inactive": 44,
+                    "total": 179
+                },
+                "Advanced Math": {
+                    "active": 94,
+                    "inactive": 24,
+                    "total": 118
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 32,
+                    "inactive": 37,
+                    "total": 69
+                },
+                "Geometry and Trigonometry": {
+                    "active": 35,
+                    "inactive": 20,
+                    "total": 55
+                }
+            }
+        },
+        "2": {
+            "active": 788,
+            "inactive": 405,
+            "total": 1193,
+            "categories": {
+                "Information and Ideas": {
+                    "active": 41,
+                    "inactive": 48,
+                    "total": 89
+                },
+                "Craft and Structure": {
+                    "active": 133,
+                    "inactive": 36,
+                    "total": 169
+                },
+                "Expression of Ideas": {
+                    "active": 57,
+                    "inactive": 24,
+                    "total": 81
+                },
+                "Standard English Conventions": {
+                    "active": 149,
+                    "inactive": 24,
+                    "total": 173
+                },
+                "Algebra": {
+                    "active": 192,
+                    "inactive": 90,
+                    "total": 282
+                },
+                "Advanced Math": {
+                    "active": 75,
+                    "inactive": 62,
+                    "total": 137
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 88,
+                    "inactive": 99,
+                    "total": 187
+                },
+                "Geometry and Trigonometry": {
+                    "active": 53,
+                    "inactive": 22,
+                    "total": 75
                 }
             }
         },
@@ -2893,26 +2846,6 @@
             "inactive": 512,
             "total": 1171,
             "categories": {
-                "Algebra": {
-                    "active": 77,
-                    "inactive": 100,
-                    "total": 177
-                },
-                "Advanced Math": {
-                    "active": 87,
-                    "inactive": 91,
-                    "total": 178
-                },
-                "Problem-Solving and Data Analysis": {
-                    "active": 35,
-                    "inactive": 77,
-                    "total": 112
-                },
-                "Geometry and Trigonometry": {
-                    "active": 66,
-                    "inactive": 45,
-                    "total": 111
-                },
                 "Information and Ideas": {
                     "active": 159,
                     "inactive": 79,
@@ -2932,6 +2865,73 @@
                     "active": 75,
                     "inactive": 45,
                     "total": 120
+                },
+                "Algebra": {
+                    "active": 77,
+                    "inactive": 100,
+                    "total": 177
+                },
+                "Advanced Math": {
+                    "active": 87,
+                    "inactive": 91,
+                    "total": 178
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 35,
+                    "inactive": 77,
+                    "total": 112
+                },
+                "Geometry and Trigonometry": {
+                    "active": 66,
+                    "inactive": 45,
+                    "total": 111
+                }
+            }
+        },
+        "1": {
+            "active": 439,
+            "inactive": 338,
+            "total": 777,
+            "categories": {
+                "Information and Ideas": {
+                    "active": 24,
+                    "inactive": 48,
+                    "total": 72
+                },
+                "Craft and Structure": {
+                    "active": 63,
+                    "inactive": 39,
+                    "total": 102
+                },
+                "Expression of Ideas": {
+                    "active": 11,
+                    "inactive": 24,
+                    "total": 35
+                },
+                "Standard English Conventions": {
+                    "active": 34,
+                    "inactive": 24,
+                    "total": 58
+                },
+                "Algebra": {
+                    "active": 125,
+                    "inactive": 85,
+                    "total": 210
+                },
+                "Advanced Math": {
+                    "active": 54,
+                    "inactive": 29,
+                    "total": 83
+                },
+                "Problem-Solving and Data Analysis": {
+                    "active": 117,
+                    "inactive": 75,
+                    "total": 192
+                },
+                "Geometry and Trigonometry": {
+                    "active": 11,
+                    "inactive": 14,
+                    "total": 25
                 }
             }
         }
